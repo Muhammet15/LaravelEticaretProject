@@ -2,7 +2,7 @@
 <div class="container-fluid fixed " style="padding:0 ">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="height:9vh">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Panel</a>
+              <a class="navbar-brand" href="{{route('user.index')}}">Panel</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -10,7 +10,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Pages
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -20,29 +20,28 @@
                   </li>
                 </ul>
               </div>
-              <div class="input-group float-right w-25">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+              
+                
               </div>
-            </div>
+
     </nav>
 </div>
-<div class="container-fluid fixed w-100" style="height:91vh">
+<div class="container-fluid fixed w-100" style="height:91vh; padding:0">
 <div class="row">
 <div class="col-md-2" style="height:100vh">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 100%;  width:100%" >
         <ul class="nav navbar-nav flex-sm-column mb-auto ">
             <li class="nav-item active">
-                <a class="nav-link py-3 px-2" href="#">Home</a>
+                <a class="nav-link py-3 px-2 fs-5" href="{{route('user.index')}}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-3 px-2" href="#">About</a>
+                <a class="nav-link py-3 px-2 fs-5" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-3 px-2" href="#">Portfolio</a>
+                <a class="nav-link py-3 px-2 fs-5" href="#">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-3 px-2" href="#">Contact</a>
+               <a class="nav-link py-3 px-2 fs-5" href="#">Contact</a>
             </li>
         </ul>
     </nav>

@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
+use Illuminate\Support\Str;
 class UserController extends Controller
 {
     /**
@@ -14,7 +16,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('Backend.users.index');
+        $users = User::get() ?? abort(404,'Userlar bulunamadı');
+        return view('Backend.users.index',compact('users'));
     }
 
     /**
@@ -24,7 +27,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+
+       return view('Backend.users.insert');
     }
 
     /**
@@ -35,7 +39,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // User::create($request->post(),$request->except([$remember_token,$email_verified_at]));
+        User::create($request->post());
+        return redirect()->route('user.index');
     }
 
     /**
@@ -57,7 +63,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+      
+        $user = User::find($id) ?? abort(404,'Quiz bulunamadı');
+        return view('Backend.users.update',compact('user'));;
     }
 
     /**
@@ -69,7 +77,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if($request->is_admin!="1") $request->request->add(['is_admin'=> '0']); //add request
+        if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
+        $user = User::where('user_id',$id)->update($request->except(['_method','_token']));
+        return redirect()->route('user.index')->withSuccess('Başarıyla Güncellendi.');
     }
 
     /**
@@ -80,6 +91,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id) ?? abort(404,'hata');
+        $user->delete();
+        return redirect()->route('user.index')->withSuccess('Başarıyla Silindi.');
     }
 }

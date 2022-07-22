@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('user/',[UserController::class,'index'])->name('user.index');
+Route::get('user/{user_id}',[UserController::class,'destroy'])->whereNumber('user_id')->name('user.destroy');
 Route::resource('user',UserController::class);
