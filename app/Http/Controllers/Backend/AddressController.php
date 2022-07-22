@@ -14,11 +14,9 @@ class AddressController extends Controller
      */
     public function index($id)
     {
-        echo $id;
-        // $user = User::find($id)->with('addrs')->first() ??abort('404','Quiz bulunamadı');
-        // // $user = User::get() ?? abort('404','Quiz bulunamadı');
-        // return $user;
-        // return view('Backend.addresses.index',compact('user'));
+        $users = User::with('addrs')->find($id) ??abort('404','Quiz bulunamadı');
+        // $user = User::get() ?? abort('404','Quiz bulunamadı');
+        return view('Backend.addresses.index',compact('users'));
     }
 
     /**
