@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\AddressController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,4 @@ Route::get('/', function () {
 Route::get('user/',[UserController::class,'index'])->name('user.index');
 Route::get('user/{user_id}',[UserController::class,'destroy'])->whereNumber('user_id')->name('user.destroy');
 Route::resource('user',UserController::class);
+Route::resource('/user/{user_id}/address',AddressController::class);

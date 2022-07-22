@@ -26,7 +26,10 @@ class User extends Authenticatable
         'is_admin',
         'is_active',
     ];
-
+    public function addrs(){
+        // veya return $this->hasMany('App\Models\Address');
+         return $this->hasMany(Address::class,"user_id",'user_id');
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
