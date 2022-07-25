@@ -23,6 +23,6 @@ class AddressSeeder extends Seeder
             'is_Default'=>'0',
             'remember_token'=> Str::random(10),
     ]);
-        \App\Models\Address::factory(5)->create();
+        \App\Models\Address::factory(50)->create();
     }
 }

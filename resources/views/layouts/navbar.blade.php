@@ -28,7 +28,7 @@
 </div>
 <div class="container-fluid fixed w-100" style="height:91vh; padding:0">
 <div class="row">
-<div class="col-md-2" style="height:100vh">
+<div class="col-md-1" style="height:100vh">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 100%;  width:100%" >
         <ul class="nav navbar-nav flex-sm-column mb-auto ">
             <li class="nav-item active">
@@ -46,6 +46,6 @@
         </ul>
     </nav>
 </div>
-<div class="col-md-10 mt-3"  style="height:100vh">
+<div class="col-md-11 mt-3"  style="height:100vh">
   <h4>Panel Content</h4>
    <hr>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Address;
 use Illuminate\Http\Request;
 use App\Models\User;
 class AddressController extends Controller
@@ -26,7 +27,7 @@ class AddressController extends Controller
      */
     public function create()
     {
-        //
+        return "create";
     }
 
     /**
@@ -37,7 +38,7 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "store";
     }
 
     /**
@@ -48,7 +49,7 @@ class AddressController extends Controller
      */
     public function show($id)
     {
-        //
+        return "h";
     }
 
     /**
@@ -59,7 +60,8 @@ class AddressController extends Controller
      */
     public function edit($id)
     {
-        //
+        $adr = Address::find($id) ?? abort(404,'Quiz bulunamadı');
+        return view('Backend.addresses.update',compact('adr'));
     }
 
     /**
@@ -71,7 +73,10 @@ class AddressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if($request->is_default!="1") $request->request->add(['is_default'=> '0']); //add request
+        Address::where('address_id',$request->address_id)->update($request->except(['_method','_token']));
+         return redirect()->route('address.index',$id)->withSuccess('Başarıyla Güncellendi.');
+        // return redirect()->route('user.index')->withSuccess('Başarıyla Güncellendi.');
     }
 
     /**
@@ -80,8 +85,11 @@ class AddressController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id,$address_id)
     {
-        //
+
+        // return $id."--".$address_id;
+        User::find($id)->addrs()->where('address_id',$address_id)->first()->delete();
+        return redirect()->route('address.index',$id)->withSuccess('Başarıyla Silindi.');
     }
 }
