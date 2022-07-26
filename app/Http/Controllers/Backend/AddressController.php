@@ -25,9 +25,11 @@ class AddressController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        return "create";
+        
+        $user=User::find($id)?? abort(404,'Bulunmadı');
+        return view('Backend.addresses.insert',compact('user'));
     }
 
     /**
@@ -36,9 +38,11 @@ class AddressController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
-        return "store";
+        Address::Where('user_id',$id)->create($request->post());
+        return redirect()->route('user.index');
+
     }
 
     /**

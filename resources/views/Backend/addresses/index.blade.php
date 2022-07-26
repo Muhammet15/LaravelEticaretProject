@@ -2,6 +2,7 @@
 @section('Content')
 <table class="table table-bordered table-sm">
   <h5 class="float-end"><a href="{{route('user.index')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön</a></h5>
+  <h5 class="float-start"><a href="{{route('address.create',$users->user_id)}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i>Ekleme yap</a></h5>
       <p class="text-dark fw-bold">Users</p><thead>
         <tr>
           <th>Name</th>
