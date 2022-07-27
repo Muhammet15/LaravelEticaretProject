@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\AddressController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,6 @@ Route::resource('adres/{user_id}/address',AddressController::class);
 
 Route::get('/categories/{category_id}',[CategoryController::class,'destroy'])->whereNumber('category_id')->name('categories.destroy');
 Route::resource('/categories',CategoryController::class);
+
+Route::resource('/products',ProductController::class);
 // Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");

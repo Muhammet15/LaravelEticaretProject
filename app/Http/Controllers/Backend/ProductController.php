@@ -3,20 +3,21 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+use App\Models\Product;
+use App\Models\Category;
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $categorys = Category::withCount('category')->get() ?? abort(404,'Kategoriler bulunamadı');
-        return view('Backend.category.index',compact('categorys'));
+        $products = Product::with('category')->where('category_id',$request->id)->get()  ?? abort(404,'Ürünler bulunamadı');
+        return view('Backend.products.index',compact('products'));
     }
 
     /**
@@ -26,7 +27,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('Backend.category.insert');
+        $categorys = Category::get() ?? abort(404,'Kategoriler bulunamadı');
+        return view('Backend.products.insert',compact('categorys'));
     }
 
     /**
@@ -37,9 +39,8 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-         // User::create($request->post(),$request->except([$remember_token,$email_verified_at]));
-         Category::create($request->post());
-         return redirect()->route('categories.index');
+       Product::create($request->post());
+       return redirect()->route('categories.index');
     }
 
     /**
@@ -50,7 +51,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        return "sdsdsdsdsd";
     }
 
     /**
@@ -61,8 +62,7 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category = Category::find($id) ?? abort(404,'Quiz bulunamadı');
-        return view('Backend.category.update',compact('category'));;
+        return "sdsad";
     }
 
     /**
@@ -74,11 +74,8 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
-        $user = Category::where('category_id',$id)->update($request->except(['_method','_token']));
-        return redirect()->route('categories.index')->withSuccess('Başarıyla Güncellendi.');
+        return "shgfjhfgjdsd";
     }
-    
 
     /**
      * Remove the specified resource from storage.
@@ -88,8 +85,6 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $category = Category::find($id) ?? abort(404,'hata');
-        $category->delete();
-        return redirect()->route('categories.index')->withSuccess('Başarıyla Silindi.');
+        return "sdsasdasdd";
     }
 }
