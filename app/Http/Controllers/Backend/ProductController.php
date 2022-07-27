@@ -51,7 +51,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return "sdsdsdsdsd";
+        return "show";
     }
 
     /**
@@ -62,7 +62,9 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        return "sdsad";
+        $catnames =  Category::get() ?? abort(404,'Kategoriler bulunamadı');
+        $categorys = Product::where('products_id',$id)->first() ?? abort(404,'Kategoriler bulunamadı');
+        return view('Backend.products.update',compact('categorys','catnames'));;
     }
 
     /**
@@ -74,7 +76,9 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return "shgfjhfgjdsd";
+        if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
+         Product::where('products_id',$id)->update($request->except(['_method','_token']));
+        return redirect()->route('categories.index')->withSuccess('Başarıyla Güncellendi.');
     }
 
     /**
@@ -85,6 +89,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        return "sdsasdasdd";
+        Product::where('products_id',$id)->delete() ?? abort(404,'hata');
+        return redirect()->route('categories.index');
     }
 }

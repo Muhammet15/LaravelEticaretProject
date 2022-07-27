@@ -12,12 +12,12 @@
           <th>Slug</th>
           <th>Aktif</th>
           <th>İşlemler</th>
+          
         </tr>
       </thead>
       <tbody>
 @foreach($products as $cat)
 <tr>
-
     <td>{{$cat->category->name}}</td>
     <td>{{$cat->name}}</td>
     <td>{{$cat->price}}</td>
@@ -26,7 +26,8 @@
     <td>{{$cat->slug}}</td>
     <td>{{$cat->is_active}}</td>
     <td>
-      {{-- <a href="{{route('products.index')}}" class="btn btn-sm btn-info"><i class=" fa fa-info"></i></a> --}}
+      <a href="{{route('products.edit',$cat->products_id)}}" class="btn btn-sm btn-primary"><i class=" fa fa-edit"></i></a>
+      <a href="{{route('products.destroy',$cat->products_id)}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a>
     </td>
   </tr>  
 

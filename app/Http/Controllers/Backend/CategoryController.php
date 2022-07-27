@@ -37,7 +37,6 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-         // User::create($request->post(),$request->except([$remember_token,$email_verified_at]));
          Category::create($request->post());
          return redirect()->route('categories.index');
     }
