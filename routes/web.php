@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\AddressController;
+use App\Http\Controllers\Backend\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +25,7 @@ Route::resource('user',UserController::class);
 Route::get('adres/{user_id}/address',[AddressController::class,'index'])->name('address.index');
 Route::get('adres/{user_id}/address/{address_id}',[AddressController::class,'destroy'])->whereNumber('address_id')->name('address.destroy');
 Route::resource('adres/{user_id}/address',AddressController::class);
+
+Route::get('/categories/{category_id}',[CategoryController::class,'destroy'])->whereNumber('category_id')->name('categories.destroy');
+Route::resource('/categories',CategoryController::class);
 // Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");

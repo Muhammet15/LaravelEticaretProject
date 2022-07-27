@@ -35,10 +35,10 @@
                 <a class="nav-link py-3 px-2 fs-5" href="{{route('user.index')}}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-3 px-2 fs-5" href="#">About</a>
+                <a class="nav-link py-3 px-2 fs-5" href="{{route('user.index')}}">Kullanıcılar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-3 px-2 fs-5" href="#">Portfolio</a>
+                <a class="nav-link py-3 px-2 fs-5" href="{{route('categories.index')}}">Kategoriler</a>
             </li>
             <li class="nav-item">
                <a class="nav-link py-3 px-2 fs-5" href="#">Contact</a>
