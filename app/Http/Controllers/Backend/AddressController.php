@@ -80,7 +80,6 @@ class AddressController extends Controller
         if($request->is_default!="1") $request->request->add(['is_default'=> '0']); //add request
         Address::where('address_id',$request->address_id)->update($request->except(['_method','_token']));
          return redirect()->route('address.index',$id)->withSuccess('Başarıyla Güncellendi.');
-        // return redirect()->route('user.index')->withSuccess('Başarıyla Güncellendi.');
     }
 
     /**
@@ -91,8 +90,6 @@ class AddressController extends Controller
      */
     public function destroy($id,$address_id)
     {
-
-        // return $id."--".$address_id;
         User::find($id)->addrs()->where('address_id',$address_id)->first()->delete();
         return redirect()->route('address.index',$id)->withSuccess('Başarıyla Silindi.');
     }
