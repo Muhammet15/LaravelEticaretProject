@@ -18,11 +18,11 @@ return new class extends Migration
             $table->id('products_id');
             $table->foreignIdFor(Category::class,'category_id');
             $table->string('name');
-            $table->decimal('price');
-            $table->decimal('old_price');
-            $table->text('lead');
-            $table->text('description');
-            $table->string('slug')->unique();
+            $table->float('price');
+            $table->float('old_price')->nullable();
+            $table->text('lead')->nullable();
+            $table->text('description')->nullable();
+            $table->string('slug');
             $table->boolean('is_active')->default(false);
             $table->softDeletes();
             $table->timestamps();

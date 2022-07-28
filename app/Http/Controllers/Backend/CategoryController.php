@@ -37,7 +37,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-         Category::create($request->post());
+          Category::create($request->post());
          return redirect()->route('categories.index');
     }
 
@@ -60,7 +60,7 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category = Category::find($id) ?? abort(404,'Quiz bulunamadı');
+        $category = Category::find($id) ?? abort(404,'Category bulunamadı');
         return view('Backend.category.update',compact('category'));;
     }
 
@@ -73,8 +73,12 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
-        $user = Category::where('category_id',$id)->update($request->except(['_method','_token']));
+        $cat = Category::find($id) ?? abort(404,'Category bulunamadı');
+        $cat->slug = null;
+        $cat->update(['name' => $request->name]);
+        // return $request->post();
+        // if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
+        Category::where('category_id',$id)->update($request->except(['_method','_token']));
         return redirect()->route('categories.index')->withSuccess('Başarıyla Güncellendi.');
     }
     

@@ -3,10 +3,10 @@
 <form method="POST" action="{{route('products.update',$categorys->products_id)}}" >
     @csrf
     @method('PUT')
+  <option selected>Kategoriler</option>
     <select name="category_id" class="form-select" aria-label="Default select example">  
-        <option selected>Kategoriler</option>
-            @foreach($catnames as $cat)      
-                <option value="{{$cat->category_id}}" required>{{$cat->name}}</option>
+            @foreach($catnames as $cat) 
+                <option @if($cat->category_id==$categorys->category_id) selected @endif value="{{$cat->category_id}}" required>{{$cat->name}}</option>
             @endforeach
                </select>
     <div class="mb-3">
@@ -28,10 +28,6 @@
     <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <input type="text" class="form-control" value="{{$categorys->description}}"  id="description" name="description" >
-    </div>
-    <div class="mb-3">
-        <label for="slug" class="form-label">slug</label>
-        <input type="text" class="form-control" value="{{$categorys->slug}}"  id="slug" name="slug" >
     </div>
     <div class="col-md-6">
         <div class="mb-3 form-check">

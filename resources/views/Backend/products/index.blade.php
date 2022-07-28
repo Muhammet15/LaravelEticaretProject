@@ -2,7 +2,7 @@
 @section('Content')
 <table class="table table-bordered table-sm">
   <h5 class="float-end"><a href="{{route('user.index')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön</a></h5>
-  <h5 class="float-start"><a href="{{route('products.create')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i>Product Ekle</a></h5>
+
         <tr>
           <th>Kategori Name</th>
           <th>Product Name</th>

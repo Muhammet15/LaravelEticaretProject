@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::with('category')->where('category_id',$request->id)->get()  ?? abort(404,'Ürünler bulunamadı');
+         $products = Product::with('category')->where('category_id',$request->id)->get()  ?? abort(404,'Ürünler bulunamadı');
         return view('Backend.products.index',compact('products'));
     }
 
@@ -39,6 +39,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request->post();
        Product::create($request->post());
        return redirect()->route('categories.index');
     }
@@ -76,6 +77,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+     
+        $pro = Product::find($id) ?? abort(404,'Products bulunamadı');
+        $pro->slug = null;
+        $pro->update(['name' => $request->name]);
         if($request->is_active!="1")  $request->request->add(['is_active'=> '0']); //add request
          Product::where('products_id',$id)->update($request->except(['_method','_token']));
         return redirect()->route('categories.index')->withSuccess('Başarıyla Güncellendi.');

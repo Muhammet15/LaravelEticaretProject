@@ -1,1 +1,3 @@
 npm install @fortawesome/fontawesome-free --save
+
+https://github.com/cviebrock/eloquent-sluggable for slug
