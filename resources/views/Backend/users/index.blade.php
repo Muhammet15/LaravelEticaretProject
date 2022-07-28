@@ -19,8 +19,8 @@
     <tr>
         <td>{{$user->name}}</td>
         <td>{{$user->email}}</td>
-        <td>{{$user->is_admin}}</td>
-        <td>{{$user->is_active}}</td>
+        <td>@if($user->is_admin=='1')<span class="badge bg-success">Admin</span>@else <span class="badge bg-danger">Admin değil</span>@endif</td>
+        <td>@if($user->is_active=='1')<span class="badge bg-success">Aktif</span>@else <span class="badge bg-warning">Pasif</span>@endif</td>
         <td>
             {{-- <a href="{{url('adres/'.$user->user_id.'/address')}}" class="btn btn-sm btn-danger"><i class=" fa fa-info"></i></a> --}}
             <a href="{{url('adres',[$user->user_id,"address"])}}" class="btn btn-sm btn-info"><i class=" fa fa-info"></i></a>

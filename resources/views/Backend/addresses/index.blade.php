@@ -3,14 +3,14 @@
 <table class="table table-bordered table-sm">
   <h5 class="float-end"><a href="{{route('user.index')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön</a></h5>
   <h5 class="float-start"><a href="{{route('address.create',$users->user_id)}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i>Ekleme yap</a></h5>
-      <p class="text-dark fw-bold">Users</p><thead>
+      <thead>
         <tr>
           <th>Name</th>
           <th>Şehir</th>
           <th>Semt</th>
           <th>Posta kodu</th>
           <th>Adres</th>
-          <th>Default</th>
+          <th>Default Adress</th>
           <th>İşlemler</th>
         </tr>
       </thead>
@@ -22,7 +22,7 @@
     <td>{{$user->district}}</td>
     <td>{{$user->zipcode}}</td>
     <td>{{$user->address}}</td>
-    <td>{{$user->is_default}}</td>
+    <td>@if($user->is_default=='1')<span class="badge bg-success">Added</span>@else <span class="badge bg-warning">Default</span>@endif</td>
     <td>
 
       

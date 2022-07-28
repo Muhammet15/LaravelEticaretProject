@@ -15,9 +15,10 @@
       <tbody>
 @foreach($categorys as $cat)
 <tr>
+  
     <td>{{$cat->name}}</td>
     <td>{{$cat->slug}}</td>
-    <td>{{$cat->is_active}}</td>
+    <td>@if($cat->is_active=='1')<span class="badge bg-success">Aktif</span>@else <span class="badge bg-warning">Pasif</span>@endif</td>
     <td>{{$cat->category_count}}</td>
     <td>
       <a href="{{route('products.index',['id'=>$cat->category_id])}}" class="btn btn-sm btn-info"><i class=" fa fa-info"></i></a>
@@ -25,6 +26,7 @@
       <a href="{{route('categories.destroy',$cat->category_id)}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a>
     </td>
   </tr>  
+
 @endforeach 
 </tbody>
 </table>
