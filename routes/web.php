@@ -4,6 +4,8 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\AddressController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\ProductImageController;
+use App\Models\ProductImage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,4 +35,6 @@ Route::resource('/categories',CategoryController::class);
 
 Route::get('/products/{products_id}',[ProductController::class,'destroy'])->whereNumber('products_id')->name('products.destroy');
 Route::resource('/products',ProductController::class);
+
+Route::resource('/products/{product}/images',ProductImageController::class);
 // Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");
