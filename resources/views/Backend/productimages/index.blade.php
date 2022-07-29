@@ -20,8 +20,7 @@
     <td>{{$item->seq}}</td>
     <td>@if($item->is_active=='1')<span class="badge bg-success">Aktif</span>@else <span class="badge bg-warning">Pasif</span>@endif</td>
     <td>
-    {{-- <a href="{{route('images.edit',$item->products_id)}}" class="btn btn-sm btn-primary"><i class=" fa fa-edit"></i></a> --}}
-    {{-- <a href="{{route('address.destroy',[$user->user_id,$user->address_id])}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a> --}}
+       <a href="{{route('images.edit',[$item->products_id,$item->image_id])}}" class="btn btn-sm btn-primary"><i class=" fa fa-edit"></i></a> 
        <a href="{{route('images.destroy',[$item->products_id,$item->image_id])}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a> 
     </td> 
   </tr>  
