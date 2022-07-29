@@ -24,11 +24,11 @@ class ProductImageFactory extends Factory
             600
         );
         return [
-            'products_id' => rand(1,8),
+            'products_id' => rand(1,47),
             'image_url' => $this->faker->imageUrl(800,600),
             // 'file_path' => "app/data/" . basename($fakerFileName),
             'alt' => fake()->name(),
-            'seq' => fake()->boolean(),
+            'seq' => random_int(1,4),
             'is_active' => fake()->boolean(),
         ];
     }

@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-         $products = Product::with('category')->where('category_id',$request->id)->get()  ?? abort(404,'Ürünler bulunamadı');
+        $products = Product::with('category')->where('category_id',$request->id)->get()  ?? abort(404,'Ürünler bulunamadı');
         return view('Backend.products.index',compact('products'));
     }
 

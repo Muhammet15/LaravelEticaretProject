@@ -26,7 +26,7 @@ return new class extends Migration
             $table->boolean('is_active')->default(false);
             $table->softDeletes();
             $table->timestamps();
-            // $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade'); böylede öylede olr
+            $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade');
         });
     }
 

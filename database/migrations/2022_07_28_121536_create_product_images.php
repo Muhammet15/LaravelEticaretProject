@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('seq')->default(0);
             $table->boolean('is_active')->default(0);
             $table->timestamps();
+            $table->foreign('products_id')->references('products_id')->on('products')->onDelete('cascade');
         });
     }
 

@@ -19,7 +19,7 @@ class ProductFactory extends Factory
     public function definition()
     {
        
-        $name = $this->faker->sentence(rand(2,4));
+        $name = $this->faker->sentence(rand(1,3));
         return [
             'category_id' => rand(1,10),
             'name' => $name,
@@ -29,6 +29,7 @@ class ProductFactory extends Factory
             'lead' =>fake()->text(),
             'slug'=>Str::slug($name),
             'is_active' => fake()->boolean(),
+            
         ];
     }
 }

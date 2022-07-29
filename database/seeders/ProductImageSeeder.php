@@ -17,9 +17,9 @@ class ProductImageSeeder extends Seeder
         \App\Models\ProductImage::insert([
             'products_id'=>'1',
             'image_url' => 'https://via.placeholder.com/800x600.png/0044ff?text=et',
-            'alt' =>  'sss',
-            'seq' => '0',
-            'is_active'=>'0',
+            'alt' =>  'First foto for giyim',
+            'seq' => '1',
+            'is_active'=>'1',
     ]);
         \App\Models\ProductImage::factory(40)->create();
     }
