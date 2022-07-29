@@ -36,5 +36,6 @@ Route::resource('/categories',CategoryController::class);
 Route::get('/products/{products_id}',[ProductController::class,'destroy'])->whereNumber('products_id')->name('products.destroy');
 Route::resource('/products',ProductController::class);
 
+Route::get('products/{product}/images/{images_id}',[ProductImageController::class,'destroy'])->whereNumber('images_id')->name('images.destroy');
 Route::resource('/products/{product}/images',ProductImageController::class);
 // Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");

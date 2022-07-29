@@ -16,7 +16,7 @@ return new class extends Migration
     {
         Schema::create('product_images', function (Blueprint $table) {
             $table->id('image_id');
-            $table->foreignIdFor(Product::class,'products_id');
+            $table->unsignedBigInteger('products_id');
             $table->string('image_url');
             $table->string('alt')->nullable();
             $table->string('seq')->default(0);

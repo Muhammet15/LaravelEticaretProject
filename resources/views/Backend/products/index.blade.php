@@ -2,13 +2,14 @@
 @section('Content')
 <table class="table table-bordered table-sm">
   <h5 class="float-end"><a href="{{route('user.index')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön</a></h5>
-        <tr>
+  <tr>
           <th>Kategori Name</th>
           <th>Product Name</th>
           <th>Price</th>
           <th>Old Price</th>
           <th>Description</th>
           <th>Slug</th>
+          <th>Image Count</th>
           <th>Aktif</th>
           <th>İşlemler</th>
         </tr>
@@ -22,6 +23,7 @@
     <td>{{$cat->old_price}}</td>
     <td>{{substr($cat->description,0,50)."..."}}</td>
     <td>{{$cat->slug}}</td>
+    <td>{{$cat->detail}}</td>
     <td>@if($cat->is_active=='1')<span class="badge bg-success">Aktif</span>@else <span class="badge bg-warning">Pasif</span>@endif</td>
     <td>
       <a href="{{route('images.index',$cat->products_id)}}" class="btn btn-sm btn-info"><i class=" fa fa-add"></i></a>

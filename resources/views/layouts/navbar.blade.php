@@ -40,9 +40,7 @@
             <li class="nav-item">
                 <a class="nav-link py-3 px-2 fs-5" href="{{route('categories.index')}}">Kategoriler</a>
             </li>
-            <li class="nav-item">
-               <a class="nav-link py-3 px-2 fs-5" href="#">Contact</a>
-            </li>
+           
         </ul>
     </nav>
 </div>

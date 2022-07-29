@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 use App\Models\ProductImage;
 class ProductImageController extends Controller
 {
@@ -14,21 +15,23 @@ class ProductImageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($id)
-
     {
 
-         $products = ProductImage::where('products_id',$id)->get()  ?? abort(404,'Ürünler bulunamadı');
+        // $products = ProductImage::where('products_id',$id)->get()  ?? abort(404,'Ürünler bulunamadı');
+        $products = Product::with('proimage')->find($id)  ?? abort(404,'Ürünler bulunamadı');
         return view('Backend.productimages.index',compact('products'));
-    }
+    }  
+       
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create($id)
+    {   
+        $products = Product::with('proimage')->find($id) ?? abort(404,'ProductImage bulunamadı');
+        return view('Backend.productimages.insert',compact('products'));
     }
 
     /**
@@ -37,9 +40,22 @@ class ProductImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
-        //
+        // return $id;
+        if($request->hasFile('image_url')){
+            $fileName=Str::slug($request->alt).'.'.$request->image_url->extension();
+            $fileNameWithUpload='uploads/'.$fileName;
+            $request->image_url->move(public_path('uploads'),$fileName);
+            $request->merge([
+                'image_url'=>$fileNameWithUpload,
+                'products_id'=>$id
+            ]); 
+        }
+        // return $request->post();
+        ProductImage::where('products_id',$id)->create($request->post())->get(); 
+        $products = Product::with('proimage')->find($id) ?? abort(404,'ProductImage bulunamadı');
+        return view('Backend.productimages.index',compact('products'));
     }
 
     /**
@@ -82,8 +98,11 @@ class ProductImageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id,$image_id)
     {
-        //
+        // return $id."---".$image_id;
+        ProductImage::where('products_id',$id)->find($image_id)->delete();
+        $products = Product::with('proimage')->find($id) ?? abort(404,'ProductImage bulunamadı');
+        return view('Backend.productimages.index',compact('products'));
     }
 }

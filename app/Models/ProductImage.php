@@ -16,6 +16,10 @@ class ProductImage extends Model
         'image_url',
         'alt',
         'seq',
-        'is_active',
+        'is_active',       
     ];
+    public function proimage(){
+        // veya return $this->hasMany('App\Models\Address');
+         return $this->hasOne(Product::class,"products_id",'products_id');
+    }
 }
