@@ -4,13 +4,18 @@
     @csrf
     @method('PUT')
     <div class="mb-3">
-        <label for="image_url"  class="form-label">Choose a profile picture:</label>
+        <label for="image_url"  class="form-label">Your picture:</label><br>
+        @if($products->image_url)
+                    <a href="{{asset($products->image_url)}}" target="_blank">
+                    <img src="{{asset($products->image_url)}}" style="width:100px">
+                    </a>
+        @endif
         <input type="file"  class="form-control" id="image_url" name="image_url" accept="image/png, image/jpeg">
     </div>
+    
     <x-input label="alt" placeholder="{{$products->alt}}" field="alt" type="text" />
     <x-input label="seq" placeholder="{{$products->seq}}" field="seq" type="text" />
     <x-checkbox  label="Yetkili kullanıcı Aktif"  field="is_active"  />
-    
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 @endsection

@@ -52,6 +52,9 @@ class ProductImageController extends Controller
                 'products_id'=>$id
             ]); 
         }
+        $request->merge([
+            'products_id'=>$id
+        ]);
         // return $request->post();
         ProductImage::where('products_id',$id)->create($request->post())->get(); 
         $products = Product::with('proimage')->find($id) ?? abort(404,'ProductImage bulunamadı');
@@ -88,7 +91,7 @@ class ProductImageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id,$image_id)
     {
         if($request->hasFile('image_url')){
             $fileName=Str::slug($request->alt).'.'.$request->image_url->extension();
@@ -96,13 +99,16 @@ class ProductImageController extends Controller
             $request->image_url->move(public_path('uploads'),$fileName);
             $request->merge([
                 'image_url'=>$fileNameWithUpload,
-                'products_id'=>$id
             ]); 
-            $request->except(['_method','_token']);
         }
-    //  return $request->except(['_method','_token']);
+        $request->merge([
+            'products_id'=>$id,
+        ]); 
+    // return $fileNameWithUpload;
+    // return $request->except(['_method','_token']);
     if($request->is_active!="1") $request->request->add(['is_active'=> '0']); //add request
-    ProductImage::where('products_id',$id)->update($request->post()) ?? abort(404,'Quiz bulunamadı');
+    Product::find($id)->proimage()->where('image_id',$image_id)->first()->update($request->post()) ?? abort(404,'Quiz bulunamadı');
+    // ProductImage::where('products_id',$id)->update($request->except(['_method','_token'])) ?? abort(404,'Quiz bulunamadı');
     $products = Product::with('proimage')->find($id) ?? abort(404,'ProductImage bulunamadı');
     return view('Backend.productimages.index',compact('products'));
         
