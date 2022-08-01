@@ -5,8 +5,8 @@
   <h5 class="float-start"><a href="{{route('images.create',$products->products_id)}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i>Image ekle</a></h5>
         <tr>
           <th>image Url</th>
-          <th>Alt</th>
-          <th>Seq</th>
+          <th>Açıklama</th>
+          <th>Sıra no</th>
           <th>Durum</th>
           <th>İşlemler</th>
         </tr>

@@ -13,8 +13,8 @@
         <input type="file"  class="form-control" id="image_url" name="image_url" accept="image/png, image/jpeg">
     </div>
     
-    <x-input label="alt" placeholder="{{$products->alt}}" field="alt" type="text" />
-    <x-input label="seq" placeholder="{{$products->seq}}" field="seq" type="text" />
+    <x-input label="Açıklama" placeholder="{{$products->alt}}" field="alt" type="text" />
+    <x-input label="Sıra no" placeholder="{{$products->seq}}" field="seq" type="text" />
     <x-checkbox  label="Yetkili kullanıcı Aktif"  field="is_active"  />
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

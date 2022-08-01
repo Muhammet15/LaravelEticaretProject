@@ -9,8 +9,8 @@
     </div>
 
     {{-- <x-input label="products_id" placeholder="" field="products_id" type="text" /> --}}
-    <x-input label="alt" placeholder="Resim adı giriniz" field="alt" type="text" />
-    <x-input label="seq" placeholder="Resim sırası" field="seq" type="text" />
+    <x-input label="Açıklama" placeholder="Resim adı giriniz" field="alt" type="text" />
+    <x-input label="Sıra no" placeholder="Resim sırası" field="seq" type="text" />
     <x-checkbox  label="Yetkili kullanıcı Aktif"  field="is_active"  />
     
     <button type="submit" class="btn btn-primary">Submit</button>
