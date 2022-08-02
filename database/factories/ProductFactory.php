@@ -19,7 +19,7 @@ class ProductFactory extends Factory
     public function definition()
     {
        
-        $name = $this->faker->sentence(rand(1,3));
+        $name = $this->faker->sentence(rand(1,2));
         return [
             'category_id' => rand(1,10),
             'name' => $name,

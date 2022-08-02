@@ -21,6 +21,6 @@ class ProductImageSeeder extends Seeder
             'seq' => '1',
             'is_active'=>'1',
     ]);
-        \App\Models\ProductImage::factory(40)->create();
+        \App\Models\ProductImage::factory(90)->create();
     }
 }

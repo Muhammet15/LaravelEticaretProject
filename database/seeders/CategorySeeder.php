@@ -17,6 +17,6 @@ class CategorySeeder extends Seeder
         \App\Models\Category::insert(['name' => 'Giyim','slug' =>  'giyim','is_active'=>'1']);
         \App\Models\Category::insert(['name' => 'Teknoloji','slug' => 'teknoloji','is_active'=>'1']);
         \App\Models\Category::insert(['name' => 'Okul','slug' =>'okul','is_active'=>'1']);    
-        \App\Models\Category::factory(8)->create();
+        \App\Models\Category::factory(7)->create();
     }
 }
