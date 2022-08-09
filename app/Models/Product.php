@@ -35,7 +35,7 @@ class Product extends Model
     }
     public function getDetailAttribute(){
         $count = $this->proimage()->count();
-        return  $count;
+        return   $count;
     }
 
  
