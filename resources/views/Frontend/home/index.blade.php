@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{route('profile')}}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
@@ -54,20 +54,39 @@
                 </table>
             </div>
             <div class="col-sm-9">
-                <strong>Ürünler</strong>
+                <strong>Ürünler</strong><br>
                 {{-- yanlış --}}
-                    @foreach($products->proimage as $item)
-                    {{print($item)}}
+
+                    @foreach($products as $item)
+                    {{-- {{$products[0]['proimage'][0]['image_url']}} --}}
+         
+                  
                      <div class="card" style="width: 18rem;">
-                        <img src="{{$item->image_url}}" class="card-img-top" alt="...">
+                        @foreach($item->proimage->take(1) as $proimag)
+                        <img src="{{$proimag->image_url}}" class="card-img-top" alt="..."> 
+                          @endforeach
                         <div class="card-body">
-                          <h5 class="card-title">{{$products->name}}</h5>
-                          <p class="card-text">{{$item->alt}}</p>
+                          <h5 class="card-title">{{$item->name}}</h5>
+                          <p class="card-text">{{$item->lead}}</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                     @endforeach
               
+                {{-- @foreach($products as $item) 
+                <div class="card" style="width: 18rem;">
+                       @foreach($item->proimage as $key)
+                       <img src="{{$key->image_url}}" class="card-img-top" alt="...">
+                       @endforeach
+                       <div class="card-body">
+                         <h5 class="card-title">{{$item->name}}</h5>
+                         @foreach($item->proimage as $key)
+                         <p class="card-text">{{$key->alt}}</p>
+                         @endforeach
+                         <a href="#" class="btn btn-primary">Go somewhere</a>
+                       </div>
+                   </div>
+                   @endforeach --}}
                 </table>
             </div>
         </div>    

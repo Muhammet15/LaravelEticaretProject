@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class,'index']);
+Route::get('/', [HomeController::class,'index'])->name('profile');
+Route::get('/kategori/{categorySlug?}', [HomeController::class,'index']);
 Route::get('user/',[UserController::class,'index'])->name('user.index');
 Route::get('user/{user_id}',[UserController::class,'destroy'])->whereNumber('user_id')->name('user.destroy');
 Route::resource('user',UserController::class);

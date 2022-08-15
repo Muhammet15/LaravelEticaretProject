@@ -34,7 +34,7 @@ class Product extends Model
          return $this->hasMany(ProductImage::class,"products_id",'products_id');
     }
     public function getDetailAttribute(){
-        $count = $this->proimage()->count();
+        $count = $this->hasMany(ProductImage::class,"products_id",'products_id')->count();
         return   $count;
     }
 
