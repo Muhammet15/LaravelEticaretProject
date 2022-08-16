@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container ">
+  <div class="container ">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="{{route('profile')}}">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,12 +23,21 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('profile')}}">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
+              @auth()
+                    <li class="nav-item">
+                      <a class="nav-link" href="/sepetim">sepetim</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/cikis">Çıkış</a>
+                    </li>
+              @else
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('giris')}}">Giriş</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('uyeol')}}">Üye ol</a>
+                </li>
+              @endauth
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
@@ -55,20 +64,17 @@
             </div>
             <div class="col-sm-9">
                 <strong>Ürünler</strong><br>
-                {{-- yanlış --}}
+                
 
                     @foreach($products as $item)
-                    {{-- {{$products[0]['proimage'][0]['image_url']}} --}}
-         
-                  
                      <div class="card" style="width: 18rem;">
-                        @foreach($item->proimage->take(1) as $proimag)
-                        <img src="{{$proimag->image_url}}" class="card-img-top" alt="..."> 
+                          @foreach($item->proimage->take(1) as $proimag)<!--array ilk olanı take ile aldık-->
+                              <img src="{{$proimag->image_url}}" class="card-img-top" alt="..."> 
                           @endforeach
                         <div class="card-body">
                           <h5 class="card-title">{{$item->name}}</h5>
                           <p class="card-text">{{$item->lead}}</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="/sepete-ekle/{{$item->products_id}}" class="btn btn-primary">Sepete Ekle</a>
                         </div>
                     </div>
                     @endforeach
