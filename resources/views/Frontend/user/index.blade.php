@@ -21,15 +21,7 @@
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('profile')}}">Home</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{route('giris')}}">Giriş</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{route('uyeol')}}">Üye ol</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
+              
                     </ul>
                   </div>
                 </div>
@@ -49,21 +41,18 @@
             @endforeach --}}
             <tbody>
 
-              @foreach($cart->details as $detail)   
-              <tr>
-               <td>
-                <img src="{{$detail->product->images[0]->image_url}}" class="card-img-top" alt=".."> 
-               </td>
-               <td>{{$detail->product->name}}</td>
-               <td>{{$detail->product->quantity}}</td> 
-               <td>{{$detail->product->price}}</td> 
-              </tr>
-                   @foreach($item->proimage->take(1) as $proimag)<!--array ilk olanı take ile aldık-->
-                       <img src="{{$proimag->image_url}}" class="card-img-top" alt="..."> 
-                   @endforeach
-             </div>
+              @foreach($carts as $detail)
+              {{-- {{$detail}}    --}}
+                  <tr>
+                  <td  style="height: 250px; width:500px">
+                    <img src="{{$detail->product->image->image_url}}" class="card-img-top" alt="{{$detail->product->image->alt}}"> 
+                  </td>
+                  <td>{{$detail->product->name}}</td>
+                  <td>{{$detail->product->quantity}}</td> 
+                  <td>{{$detail->product->price}}</td> 
+                  <td>sil</td> 
+                  </tr>
              @endforeach
-        </tr>  
       </tbody>
       </table>
     </div>

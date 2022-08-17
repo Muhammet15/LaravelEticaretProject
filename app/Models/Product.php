@@ -12,7 +12,7 @@ class Product extends Model
 {
     use HasFactory,SoftDeletes,Sluggable;
     protected $primaryKey="products_id";
-    protected $appends = ['detail'];
+    protected $appends = ['detail','image'];
     protected $fillable = [
         'products_id',
         'category_id',
@@ -35,9 +35,12 @@ class Product extends Model
     }
     public function getDetailAttribute(){
         $count = $this->hasMany(ProductImage::class,"products_id",'products_id')->count();
-        return   $count;
+        return $count;
     }
-
+    public function getImageAttribute(){
+        $image = $this->hasMany(ProductImage::class,"products_id",'products_id')->first();
+        return $image;
+    }
  
     public function sluggable(): array
     {

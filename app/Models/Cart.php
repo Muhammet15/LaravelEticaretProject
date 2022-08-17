@@ -15,4 +15,8 @@ class Cart extends Model
         'user_id',
         'code'
         ];
+
+        public function details(){
+            return $this->hasMany(CartDetails::class,"card_id",'card_id');
+        }
 }

@@ -15,4 +15,7 @@ class CartDetails extends Model
     'products_id',
     'quantity'
     ];
+    public function product(){
+        return $this->hasOne(Product::class,"products_id",'products_id');
+    }
 }
