@@ -13,10 +13,9 @@ use App\Models\Product;
 class CartController extends Controller
 { 
     public function index(Cart $category){
-      
         $cart = $this->getOrCreateCart();
         if(Auth::user()->user_id===$cart->user_id)
-        {
+        { 
             $carts = CartDetails::with('product')->where('cart_id',$cart->cart_id)->get();
             return view("frontend.user.index",compact('carts'));
         }
@@ -24,7 +23,6 @@ class CartController extends Controller
             return view("frontend.user.index",compact('cart'));
         }
     }
-
     public function add(Product $product, int $quantity=1){
         $cart = $this->getOrCreateCart();
         $details = new CartDetails(
@@ -37,7 +35,6 @@ class CartController extends Controller
             $details->save();
             return redirect('/sepetim');
     }
-
     private function getOrCreateCart() :Cart
     {
         $user = Auth::user();

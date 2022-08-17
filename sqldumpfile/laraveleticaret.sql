@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 01 Ağu 2022, 15:55:56
+-- Üretim Zamanı: 17 Ağu 2022, 11:05:46
 -- Sunucu sürümü: 10.4.21-MariaDB-log
 -- PHP Sürümü: 8.0.12
 
@@ -112,6 +112,15 @@ CREATE TABLE `carts` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Tablo döküm verisi `carts`
+--
+
+INSERT INTO `carts` (`cart_id`, `user_id`, `code`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(4, 1, 'CfJBa0wX', NULL, '2022-08-16 11:07:26', '2022-08-16 11:07:26'),
+(7, 13, 'mTpOd7Y7', NULL, '2022-08-17 05:44:15', '2022-08-17 05:44:15'),
+(8, 2, 'nCnxPPqz', NULL, '2022-08-17 05:57:51', '2022-08-17 05:57:51');
+
 -- --------------------------------------------------------
 
 --
@@ -126,6 +135,17 @@ CREATE TABLE `cart_details` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Tablo döküm verisi `cart_details`
+--
+
+INSERT INTO `cart_details` (`cart_detail_id`, `cart_id`, `products_id`, `quantity`, `created_at`, `updated_at`) VALUES
+(3, 4, 1, 1, '2022-08-16 11:08:02', '2022-08-16 11:08:02'),
+(4, 4, 1, 1, '2022-08-16 11:16:06', '2022-08-16 11:16:06'),
+(5, 4, 4, 1, '2022-08-16 11:21:01', '2022-08-16 11:21:01'),
+(6, 7, 1, 1, '2022-08-17 05:44:26', '2022-08-17 05:44:26'),
+(7, 8, 1, 1, '2022-08-17 05:58:00', '2022-08-17 05:58:00');
 
 -- --------------------------------------------------------
 
@@ -337,7 +357,7 @@ INSERT INTO `products` (`products_id`, `category_id`, `name`, `price`, `old_pric
 (10, 1, 'Qui voluptatem.', 612.00, 504.00, 'Vel suscipit perferendis sed sequi vel quas incidunt maiores. Illum ipsum quo veniam quia impedit. In fuga exercitationem excepturi. Aut atque eveniet ipsum ut.', 'Veniam neque quis culpa consequatur est ratione sapiente. Natus recusandae ex ut ut commodi asperiores exercitationem. Sunt quae similique et consequuntur ea non veritatis.', 'qui-voluptatem', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (11, 9, 'Ut accusamus.', 6.00, 329.00, 'Minima exercitationem saepe alias occaecati. Fugiat saepe et reiciendis saepe officiis id et. Deleniti dolorum quos laudantium magnam alias voluptatum error libero.', 'Laborum aliquid laborum est quas eum. Architecto nulla est et maiores sint quis a.', 'ut-accusamus', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (12, 8, 'Fugit.', 57.00, 159.00, 'Rerum qui commodi excepturi repellendus odit dolores. Et provident voluptate molestias consequatur sit qui. Qui similique quasi voluptas. Provident rerum alias tempore quibusdam rem quis.', 'Eos sed sed praesentium qui nobis. At nemo quod nemo ipsum eos unde. Incidunt officia eveniet id incidunt magnam veritatis qui qui.', 'fugit', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(13, 2, 'Deserunt accusantium.', 407.00, 363.00, 'Qui ut voluptatem quaerat aspernatur odio. Laborum at modi est odio asperiores ipsam illum. Est et enim aut ex voluptate minus sapiente.', 'Eius aut minus maiores. Dolore quo culpa non consequuntur cupiditate. Harum et ea magni culpa sapiente.', 'deserunt-accusantium', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
+(13, 2, 'Deserunt accusantium.', 407.00, 363.00, 'Qui ut voluptatem quaerat aspernatur odio. Laborum at modi est odio asperiores ipsam illum. Est et enim aut ex voluptate minus sapiente.', 'Eius aut minus maiores. Dolore quo culpa non consequuntur cupiditate. Harum et ea magni culpa sapiente.', 'deserunt-accusantium', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (14, 10, 'Voluptatem quibusdam.', 999.00, 473.00, 'Ea sequi modi nulla et perferendis libero. Sequi deserunt eveniet ad magnam et molestiae dolorem. Culpa ut sint ea. Quo et eum molestiae magnam rerum tempora itaque voluptatem.', 'Est vel perspiciatis ut et. Omnis voluptas et sint velit dolorum molestiae quod. Ducimus exercitationem similique iure et. Magnam doloremque delectus asperiores necessitatibus quia accusamus tenetur.', 'voluptatem-quibusdam', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (15, 5, 'Quidem molestias.', 41.00, 899.00, 'Sed omnis et voluptas tenetur mollitia molestias ut fugit. Dolor reiciendis necessitatibus modi provident quidem voluptatem ut ullam. Libero omnis qui autem esse voluptatem molestias.', 'Nihil tempore aut animi odit blanditiis. Illo autem ipsa officiis voluptas officiis. Est illo qui ad quia nobis quia tempora sunt.', 'quidem-molestias', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (16, 2, 'Numquam sint.', 668.00, 327.00, 'Atque laudantium et consequatur sit quia. Necessitatibus officia alias molestiae adipisci beatae facilis dicta. Reiciendis atque ea omnis dolorum voluptas voluptatem rerum.', 'Autem omnis magni explicabo quibusdam deserunt sunt. Qui quae sint non odit animi ut atque. Maiores harum placeat adipisci aperiam sit. Magni fugit consectetur in omnis qui corrupti.', 'numquam-sint', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
@@ -515,17 +535,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `email`, `email_verified_at`, `password`, `is_admin`, `is_active`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Muhammet ali Kayacan', 'muhammetluna@gmail.com', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'U8qxjMZluC', NULL, NULL),
-(2, 'Mortimer Veum', 'johnson.ebony@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, 'aUUibVEUox', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
+(1, 'Muhammet ali Kayacan', 'muhammetluna@gmail.com', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'Q9xjiT1Xarz7hl9Cskq0HX2d9NZiSP9SrunaNlTbm5l0QfZ4niz8oLuGCGYG', NULL, NULL),
+(2, 'Mortimer Veum', 'johnson.ebony@example.net', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'c5gM6p1IyJlbpAmk7M69bAlUaZFwMlEq9HJhbARlqPlvEHiurEQad9BvuzXm', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (3, 'Kory White', 'aoreilly@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, '2KoK4QxMYU', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (4, 'Cesar Gutkowski', 'mohr.katrine@example.org', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'Kctl9mthc8', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (5, 'Mr. Rollin Reilly DDS', 'nelda57@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'jibCLRqkvE', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(6, 'Prof. Lesly Rippin I', 'wyman.vandervort@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, '8CzVxZD3OV', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
+(6, 'Prof. Lesly Rippin I', 'wyman.vandervort@example.net', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 0, 1, '8CzVxZD3OV', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (7, 'Mrs. Magnolia Kohler', 'ivah.thompson@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'f0cHtk4sn3', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (8, 'Stephan Reynolds', 'gwendolyn71@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, '28NwrECrxs', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (9, 'Alverta Goodwin IV', 'kreinger@example.org', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, '0zstqeRvxJ', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
 (10, 'Dr. Ricky Dicki V', 'rafael37@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, '2J31KcSgfe', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(11, 'Shyanne Schoen MD', 'jairo09@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, 'FSDDy5whcW', '2022-08-01 10:53:27', '2022-08-01 10:53:27');
+(11, 'Shyanne Schoen MD', 'jairo09@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, 'FSDDy5whcW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
+(13, 'sd', 'muhammetluna44@gmail.com44', NULL, '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'xHODDgsZqLDOOgWYnWLJaNVHclNIjTbfh5MEKxFuJnurRM05geoeoneB7yCR', '2022-08-16 05:40:19', '2022-08-16 05:47:01');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -652,13 +673,13 @@ ALTER TABLE `addresses`
 -- Tablo için AUTO_INCREMENT değeri `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `cart_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `cart_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `cart_details`
 --
 ALTER TABLE `cart_details`
-  MODIFY `cart_detail_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `cart_detail_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `categories`
@@ -724,7 +745,7 @@ ALTER TABLE `product_images`
 -- Tablo için AUTO_INCREMENT değeri `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Dökümü yapılmış tablolar için kısıtlamalar

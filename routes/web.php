@@ -35,23 +35,31 @@ Route::post('/uye-ol',[AuthController::class,'signUp'])->name('uyeolpost');
 
 Route::get('/cikis',[AuthController::class,'logout']);
 
-Route::get('/sepetim',[CartController::class,'index']);
-Route::get('/sepete-ekle/{product}',[CartController::class,'add']);
+Route::group(["middleware"=>"auth"],function()
+{
+    Route::get('/sepetim',[CartController::class,'index']); 
+    Route::get('/sepete-ekle/{product}',[CartController::class,'add']);
+    Route::get('/sepete-sil/{cartDetails}',[CartController::class,'remove'])->name('remove');
 
-Route::get('user/',[UserController::class,'index'])->name('user.index');
-Route::get('user/{user_id}',[UserController::class,'destroy'])->whereNumber('user_id')->name('user.destroy');
-Route::resource('user',UserController::class);
+});
+Route::group(["middleware"=>"auth"],function()
+{
+    Route::get('user/',[UserController::class,'index'])->name('user.index');
+    Route::get('user/{user_id}',[UserController::class,'destroy'])->whereNumber('user_id')->name('user.destroy');
+    Route::resource('user',UserController::class);
+    
+    Route::get('adres/{user_id}/address',[AddressController::class,'index'])->name('address.index');
+    Route::get('adres/{user_id}/address/{address_id}',[AddressController::class,'destroy'])->whereNumber('address_id')->name('address.destroy');
+    Route::resource('adres/{user_id}/address',AddressController::class);
+    
+    Route::get('/categories/{category_id}',[CategoryController::class,'destroy'])->whereNumber('category_id')->name('categories.destroy');
+    Route::resource('/categories',CategoryController::class);
+    
+    Route::get('/products/{products_id}',[ProductController::class,'destroy'])->whereNumber('products_id')->name('products.destroy');
+    Route::resource('/products',ProductController::class);
+    
+    Route::get('products/{product}/images/{images_id}',[ProductImageController::class,'destroy'])->whereNumber('images_id')->name('images.destroy');
+    Route::resource('/products/{product}/images',ProductImageController::class);
+    // Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");
+});
 
-Route::get('adres/{user_id}/address',[AddressController::class,'index'])->name('address.index');
-Route::get('adres/{user_id}/address/{address_id}',[AddressController::class,'destroy'])->whereNumber('address_id')->name('address.destroy');
-Route::resource('adres/{user_id}/address',AddressController::class);
-
-Route::get('/categories/{category_id}',[CategoryController::class,'destroy'])->whereNumber('category_id')->name('categories.destroy');
-Route::resource('/categories',CategoryController::class);
-
-Route::get('/products/{products_id}',[ProductController::class,'destroy'])->whereNumber('products_id')->name('products.destroy');
-Route::resource('/products',ProductController::class);
-
-Route::get('products/{product}/images/{images_id}',[ProductImageController::class,'destroy'])->whereNumber('images_id')->name('images.destroy');
-Route::resource('/products/{product}/images',ProductImageController::class);
-// Route::get('/adres/{user_id}/address',[AddressController::class,'index'])->name("adres.create");
