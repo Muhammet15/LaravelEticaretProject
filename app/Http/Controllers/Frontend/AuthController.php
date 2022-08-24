@@ -16,10 +16,12 @@ class AuthController extends Controller
     }
     public function signIn(Request $request)
     {
+      return $request->post();
          $credentials = $request->only(["email","password"]);
          $rememberMe = $request->get("remember-me",false);
          if(Auth::attempt($credentials,$rememberMe))
-         {// return Auth::user();
+         {
+            // Auth::user()->createToken("sss");
             return redirect(to:"/");
          }
          else {
