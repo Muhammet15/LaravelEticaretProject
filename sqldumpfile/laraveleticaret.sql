@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 17 Ağu 2022, 11:05:46
+-- Üretim Zamanı: 24 Ağu 2022, 15:06:40
 -- Sunucu sürümü: 10.4.21-MariaDB-log
 -- PHP Sürümü: 8.0.12
 
@@ -45,57 +45,57 @@ CREATE TABLE `addresses` (
 --
 
 INSERT INTO `addresses` (`address_id`, `user_id`, `city`, `district`, `zipcode`, `address`, `is_default`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Turkey', 'Istanbul', '3400', 'Turkey lorem ipsum lorem ipsum avcılar', 0, 'nqf32xRcXG', NULL, NULL),
-(2, 6, 'Rogahnburgh', 'Sauerville', '5', '4706 Gaylord Glen Apt. 396\nPort Gaylefort, CO 64194', 1, 'y8MXUXXh0x', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(3, 1, 'West Danview', 'Chazborough', '5', '5270 Dicki Course\nPort Reginaldside, AK 97997-4155', 0, 'uC1zGK9TnX', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(4, 1, 'Spinkaview', 'South Miguelport', '2', '78975 Damon Point Apt. 642\nWolffton, WY 32231', 1, 'dsNIAf3erG', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(5, 1, 'Braunmouth', 'Leofort', '9', '77616 Frederique Radial\nGenesisshire, DE 44259-8970', 0, 'iFbKAd51d6', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(6, 3, 'Jenkinsmouth', 'Schulistville', '5', '674 Wisozk Corners Suite 537\nRosieberg, UT 92559-9880', 1, '8czOuoPkue', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(7, 9, 'Haagside', 'Lake Alainastad', '4', '1743 Isom Streets\nVeumbury, NY 00739-2133', 1, '5qNVvpq08l', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(8, 9, 'Santinatown', 'New Adriana', '9', '23632 Pfeffer Fort Suite 433\nHettingerburgh, IA 98380', 0, 'EKObX3yOCM', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(9, 1, 'Rosalindaport', 'Port Tatyanahaven', '7', '4130 Addison Valley\nWest Leonie, MI 31200-5934', 1, 'cWu7DX94iN', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(10, 10, 'Lake Franco', 'South Dino', '9', '4314 Conroy Pine\nFerrymouth, UT 97965', 1, 'DKPn9PTfFk', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(11, 5, 'Kovacekside', 'Fridaburgh', '6', '9415 Amparo Estate Apt. 797\nKrysteltown, NE 20639', 0, 'CY4RTfDoN4', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(12, 5, 'Williamland', 'Prosaccotown', '2', '5381 Grady Run Suite 550\nLake Kristian, MD 27016-4437', 1, 'rzJONSqRD7', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(13, 4, 'Port Karleytown', 'New Hiramview', '6', '3195 Connelly Courts Suite 786\nNorth Aishashire, KS 86703-9832', 0, 'WCOxT5YJL3', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(14, 10, 'East Kayleyside', 'Lourdesberg', '6', '799 Vernie Drive Apt. 287\nSouth Adolfo, OK 21115', 1, 'wHGyOTxFVD', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(15, 10, 'Jastside', 'Hollisberg', '7', '516 Hermann Harbor Suite 897\nNew Lora, MD 55341-0400', 1, '5n8vMflvKW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(16, 4, 'New Russell', 'Carolchester', '4', '9244 Lonnie Ranch\nPort Assuntaborough, NH 25747-0672', 0, 'yhDaoEXXBK', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(17, 6, 'North King', 'Creminmouth', '1', '9346 Trantow Court Suite 881\nWest Louisamouth, AK 76972', 0, 'T1OiZkRO8F', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(18, 1, 'North Alyciamouth', 'New Ari', '9', '370 Randall Shore\nLake Kyliefort, NH 68534-1730', 0, '0ZQJeYYSTX', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(19, 10, 'Lake Ottoville', 'Elishastad', '7', '439 Juliana Extensions\nRogersburgh, RI 43455', 1, 'p1V0PSNena', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(20, 4, 'Metzmouth', 'East Hannahbury', '2', '293 Ofelia Mountain\nMonahanfurt, MA 23009', 1, 'XGitZkNCEF', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(21, 7, 'New Scarlettchester', 'Port Ezra', '4', '371 Nikolaus Causeway\nPort Nelliefort, PA 21794', 0, '0cRsoCbcuX', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(22, 1, 'Svenview', 'New Betteside', '2', '928 Hoyt Summit\nEast Ora, NC 65633-1660', 0, 'veiJULd48y', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(23, 8, 'East Rosetta', 'North Jeromy', '6', '545 Bayer Shore Apt. 035\nLake Jadonhaven, KS 15524', 0, 'NeUUYkV32X', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(24, 1, 'Tremblayborough', 'Labadiechester', '7', '95065 Bruen Springs Suite 750\nLake Trystan, KY 16139', 1, 'gqhItyIuw5', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(25, 8, 'East Lavinia', 'Dejonchester', '4', '266 Sporer Garden Suite 958\nLaurelmouth, TX 29705', 0, 'EAa8gITfin', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(26, 10, 'Gustport', 'New Brennafort', '7', '1760 Jon Locks Suite 226\nLake Maiafort, WI 57498-8804', 1, 'SAFiBGULxo', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(27, 10, 'Averyberg', 'Port Flavie', '4', '809 Reilly Prairie Suite 082\nOberbrunnerville, RI 63328-7199', 0, 'WlIBO2PxRJ', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(28, 10, 'South Elijahburgh', 'Blickfurt', '7', '4703 Damaris Roads\nJaymeberg, MO 72717', 0, 'KKRN6zuIT6', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(29, 8, 'East Lizaland', 'Leannemouth', '9', '503 Laverne Forge\nEast Kyletown, SC 22464', 1, 'FBkuK2mmWX', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(30, 6, 'Timothyfort', 'Maybellmouth', '9', '83627 Odie River Apt. 083\nMaudton, MS 06837', 1, 'yBlG2CLcYr', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(31, 4, 'North Kailey', 'Yesseniaton', '7', '14987 Pfeffer Mission\nBrockborough, IL 34924-0326', 0, '5e9jmBKF27', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(32, 7, 'Calebview', 'Port Mona', '4', '542 Kiarra Neck\nSouth Karianeborough, MO 16392', 0, 'Y8Mk7FIoEy', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(33, 5, 'West Morrisville', 'Mayertshire', '2', '97003 Moore Walks\nElisafort, CO 07076', 0, '1iDCLRrTr9', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(34, 2, 'Geovanniburgh', 'South Shadmouth', '7', '75536 Esther Forest Apt. 318\nSouth Kaci, NH 26963-7460', 1, 'prnkGdIj8x', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(35, 3, 'Wuckertville', 'Amyfort', '6', '51878 Rick Falls\nElzamouth, NC 56903-0970', 1, 'JJ3Ahz7PbB', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(36, 4, 'West Elissatown', 'Kuhlmanton', '1', '861 Gideon Mall Apt. 063\nColebury, LA 90276-7789', 1, 'Yh7bxq3Szi', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(37, 9, 'South Julianne', 'North Alphonsoberg', '1', '6120 Turner Terrace\nLake Norris, AR 76621', 0, 'JvNcCTwPZM', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(38, 10, 'South Margaret', 'South Nedport', '6', '1937 Dayton Valleys Apt. 093\nClaudieshire, OH 35258-4218', 0, '2e1OJOXRSW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(39, 7, 'South Philipberg', 'West Brennon', '7', '54885 Runolfsson Summit\nCorkeryside, WV 05829-0635', 0, '9tNMhCldAM', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(40, 5, 'Cartwrightborough', 'West Thaliastad', '5', '24424 Wolff Circles\nMalachiside, ID 69031', 0, '0a15Q0qz7I', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(41, 10, 'Samarafurt', 'Port Letha', '5', '1162 Bart Cliffs Suite 461\nLake Jailynstad, AZ 50542', 0, 'xyd5wi2VDc', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(42, 10, 'East Matteoberg', 'Lake Jerodport', '3', '3899 Tremblay Mission Apt. 612\nSouth Floridahaven, OR 71501-9582', 1, '7NoqSHH7J2', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(43, 8, 'New Myra', 'New Carolyn', '3', '688 Stiedemann Centers\nPort Ahmad, UT 55533-4557', 1, 'ldF2GOiFXh', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(44, 8, 'West Felipastad', 'Port Wernershire', '4', '1401 Unique Summit\nKaseyville, WA 99310', 1, 'Bx9KYnQLHW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(45, 6, 'Jamarcushaven', 'New Miracle', '8', '51557 Desiree Trail Apt. 737\nSporerchester, MA 38288-8318', 1, 'RooRfl2yCR', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(46, 9, 'Aniyahshire', 'West Genesis', '6', '51082 Claude Cliff\nLake Dewittshire, DE 91143-2839', 0, 'IldZAE4Ii9', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(47, 3, 'North Luismouth', 'North Emilietown', '2', '81708 Williamson Neck Suite 424\nBashirianmouth, NC 68071', 1, 'tgI2JPJWum', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(48, 10, 'Abagailville', 'West Marcelle', '4', '7318 Edd Dale\nDietrichborough, DE 27684-3223', 0, 'kjVy5nzDad', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(49, 9, 'Lake Halport', 'Hellertown', '3', '25909 Ellsworth Springs\nNorth Nathaniel, SC 96603', 0, '4ghhqlLaZW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(50, 6, 'Hyattland', 'North Giovanna', '4', '188 Gleason Gateway\nEast Terryland, UT 74929-2173', 1, 'mklnMTe5Yk', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(51, 2, 'Schadenchester', 'Port Darenside', '2', '5124 Ryley Road\nCharlesside, MI 02247-9185', 1, 'Paq2oSmSBO', '2022-08-01 10:53:27', '2022-08-01 10:53:27');
+(1, 1, 'Turkey', 'Istanbul', '3400', 'Turkey lorem ipsum lorem ipsum avcılar', 0, 'brxsCwV5bx', NULL, NULL),
+(2, 4, 'McClureview', 'South Kaela', '9', '3363 August Port\nVanessafort, DE 00208', 1, 'ziwbdptubr', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(3, 4, 'Port Elmer', 'Toybury', '5', '721 Nolan Lodge\nBorerland, CA 68514-4295', 1, 'DgBAGXBnji', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(4, 6, 'North Scarlett', 'Tessieburgh', '7', '48680 Cole Locks Suite 246\nNorth Cortezmouth, GA 91844', 1, 'X5FrOXCBYM', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(5, 2, 'Lake Damonview', 'Francismouth', '1', '283 Murazik Via\nProhaskafort, WA 32119-4557', 1, 'NJEOxXh5c2', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(6, 7, 'North Marcel', 'Rodgerfort', '9', '54108 Sawayn Junction Apt. 178\nCheyannemouth, RI 23720-7547', 1, 't7qQHokO3g', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(7, 4, 'South Nelleview', 'Port Theomouth', '2', '6420 Turcotte Overpass Apt. 185\nCristtown, IL 71152-5448', 0, 'cerUQzIK8L', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(8, 1, 'Lake Antonio', 'Coryside', '4', '10433 Schinner Circles Suite 453\nWest Joshua, ME 72584-0066', 0, '5YRtwd2JZd', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(9, 5, 'West Benny', 'Eudoraville', '8', '606 Roxane Parkways\nDouglasbury, ND 72633', 0, 'Ht8uKrS74J', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(10, 6, 'Vidafurt', 'Port Austyn', '2', '213 Carmela Camp\nNorth Fredaville, LA 65443-7687', 1, 'xKDzxZLHig', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(11, 9, 'Gardnerstad', 'Jonatanbury', '3', '181 Hilma Glen Apt. 316\nBartolettichester, AR 51631', 0, 'FMnHLTCjXK', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(12, 8, 'Moenmouth', 'Port Toreymouth', '9', '5342 Twila Squares\nKiehnstad, TN 04593-7850', 0, 'llc2VCpriS', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(13, 10, 'West Orie', 'East Donavonshire', '4', '922 Breitenberg Harbor\nMcKenzieshire, MA 48108-0188', 0, 'J05wVIFUEZ', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(14, 9, 'New Zachariah', 'Glovertown', '4', '110 Wintheiser Parks\nGarryside, MS 27554-3464', 0, 'Ct6nl6yBje', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(15, 5, 'Okunevaburgh', 'Port Darryl', '5', '8703 Bogan Avenue\nMillstown, WV 67571', 1, 'gUrhoucDo1', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(16, 10, 'Gaylordton', 'Sallyberg', '9', '46610 Toby Hill\nNorth Ernesto, MS 07301', 1, 'RDixxxXLh5', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(17, 4, 'Kadeberg', 'New Alessandraport', '8', '24261 Zechariah Vista Suite 640\nO\'Keefestad, MD 43322', 1, 'ZGTnufDYW2', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(18, 6, 'Port Elbert', 'South Guido', '4', '1422 Runolfsdottir Springs\nRiceberg, ME 01975-8411', 0, 'cM4PGNMenD', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(19, 1, 'Kennaland', 'South Joanny', '8', '45159 Jacobs Squares\nSylviabury, UT 13048-3450', 1, '7fV2ZEIw5j', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(20, 2, 'East Henriberg', 'Wildermanside', '8', '684 Catherine Plains Suite 901\nWalterfort, WV 23353', 1, 'V8e5p5Gxhx', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(21, 8, 'Alyciaside', 'Boehmchester', '3', '824 Moore Port Apt. 877\nDesmondchester, MD 97857-2170', 1, 'g33r6BqBmf', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(22, 9, 'Lake Wilfred', 'Lake Isadore', '5', '638 Osinski Burg\nLake Loycechester, OK 30158-0367', 0, 'UPHAEPlSee', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(23, 10, 'Reillyview', 'South Philipmouth', '8', '42939 Waters Fall Suite 755\nMayerbury, AR 89247-0088', 0, '9dHY9C180Q', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(24, 2, 'Biankastad', 'Thorafort', '5', '618 Bobby Valley Suite 636\nSigmundborough, WI 36795-3651', 1, 'uYtleAom5n', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(25, 9, 'Gastonbury', 'North Kaseymouth', '5', '26815 Collins Run Suite 243\nFelicityfort, VT 42697-7840', 0, 'VLX3VNnM9C', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(26, 10, 'South Merleton', 'Leopoldmouth', '6', '740 Arjun Land\nLake Virginia, MS 72861-3373', 1, '22XOsPOGvM', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(27, 3, 'East Clint', 'East Haley', '4', '5088 Pollich Isle Suite 884\nFionastad, CA 45037', 1, 'NkrSVLNj2y', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(28, 2, 'New Alexiemouth', 'West Sandraport', '3', '22476 Vidal Stravenue\nWendyview, IA 76710', 1, 'lbd9PmZqp1', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(29, 3, 'West Jeremyburgh', 'Rolfsonhaven', '9', '9419 Lindsey Walks Suite 706\nNew Alainatown, UT 64722-7872', 1, 'gxzF9pC8Zs', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(30, 7, 'Adalinechester', 'Maritzashire', '7', '32343 Cassidy Gardens\nHerbertfort, ND 92959-0163', 0, 'raNnoRttIh', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(31, 5, 'Pfannerstillmouth', 'Ahmadbury', '6', '76158 Colt Hill Suite 680\nWest Vernbury, MS 00977-4346', 0, '37O85wLpz2', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(32, 10, 'Faheyburgh', 'South Deron', '3', '597 Larkin Rapid Apt. 157\nPort Antoniaton, SC 76471', 1, 'ajAHH30584', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(33, 6, 'East Damian', 'New Vedafort', '5', '20700 Ortiz Dam\nTyrellburgh, MA 67725-7170', 1, 'ZU7mCP3K5l', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(34, 1, 'New Citlalliborough', 'Waelchiside', '7', '242 Kuhic Path Suite 382\nCummerataville, GA 03283', 1, '7YjTNTPugh', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(35, 10, 'Albertahaven', 'Leschmouth', '7', '442 Dayne Knoll Apt. 045\nEast Westley, NM 47706-5423', 1, 'RmZUJa48v9', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(36, 9, 'Johnsshire', 'Jameyside', '3', '4414 Graham Lights Suite 430\nWalshfurt, TX 19929', 1, 'y9rlrfmmI8', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(37, 9, 'East Ilianatown', 'Purdymouth', '5', '3656 Abbott Estates Apt. 105\nWest Shanelstad, NY 63396-0091', 1, 'myQAzZZkg1', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(38, 9, 'East Beau', 'North Louveniamouth', '9', '84874 Jayme Circle\nSouth Sabrina, MT 48766', 1, 'kHp1JXYg00', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(39, 9, 'Aniyaview', 'Gaylordhaven', '1', '6829 Gerda Corner Apt. 350\nPort Dockchester, CO 19736-4854', 0, 'tXyth5CUXd', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(40, 3, 'New Medamouth', 'Bentonview', '8', '147 Judd Village Apt. 913\nPort Melvinville, MA 19571-8518', 1, '45MrzH3qZz', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(41, 1, 'New Brendonville', 'O\'Konbury', '1', '688 Vladimir Mews Apt. 382\nNorth Vilma, NM 33616', 1, 'bZwYM5RJgs', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(42, 1, 'New Samport', 'Osborneburgh', '7', '25414 Rowena Motorway\nPort Daphne, CO 05476-2784', 1, 'WHVLXX8KxV', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(43, 2, 'Burdettemouth', 'North Jessie', '5', '6233 Volkman Bypass Suite 451\nAltenwerthshire, IN 72325', 0, 'q9jAHIX8Fp', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(44, 9, 'Port Maymieberg', 'Port Kraigfurt', '7', '90051 Laurine Rue\nWest Shermanburgh, LA 93857', 0, 'g7eh7xIIvP', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(45, 1, 'East Scotty', 'Maggiostad', '1', '170 Orn Bridge Apt. 362\nMaxwelltown, IL 21442', 0, 'lwdgOXhcCL', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(46, 7, 'Daxbury', 'East Natalie', '4', '1567 Kozey Port\nNew Cleoshire, RI 77435', 0, 'nQUOsJ4akS', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(47, 9, 'Ryanport', 'Funkburgh', '7', '4603 Windler Junction\nNorth Dulce, NH 34966', 0, 'ENcGh2XGPS', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(48, 5, 'Port Donatohaven', 'New Ora', '6', '19267 Laverna Centers\nFredymouth, LA 36159-2252', 0, 'i8ERMHIviw', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(49, 9, 'Turnermouth', 'East Jaylen', '8', '5544 Cecil Prairie\nFrancesville, VT 81485-8479', 0, 'N7d3TZAeIO', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(50, 8, 'New Dollyton', 'Daltonbury', '9', '75322 Oberbrunner Lakes Apt. 206\nAliyahville, KY 03186', 1, '3JNcVgUG7A', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(51, 2, 'Blandaburgh', 'New Kylee', '6', '381 Morissette Station Suite 243\nEdythtown, MI 84326', 0, 'HJizjEDjLs', '2022-08-24 10:02:47', '2022-08-24 10:02:47');
 
 -- --------------------------------------------------------
 
@@ -112,15 +112,6 @@ CREATE TABLE `carts` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Tablo döküm verisi `carts`
---
-
-INSERT INTO `carts` (`cart_id`, `user_id`, `code`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(4, 1, 'CfJBa0wX', NULL, '2022-08-16 11:07:26', '2022-08-16 11:07:26'),
-(7, 13, 'mTpOd7Y7', NULL, '2022-08-17 05:44:15', '2022-08-17 05:44:15'),
-(8, 2, 'nCnxPPqz', NULL, '2022-08-17 05:57:51', '2022-08-17 05:57:51');
-
 -- --------------------------------------------------------
 
 --
@@ -135,17 +126,6 @@ CREATE TABLE `cart_details` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Tablo döküm verisi `cart_details`
---
-
-INSERT INTO `cart_details` (`cart_detail_id`, `cart_id`, `products_id`, `quantity`, `created_at`, `updated_at`) VALUES
-(3, 4, 1, 1, '2022-08-16 11:08:02', '2022-08-16 11:08:02'),
-(4, 4, 1, 1, '2022-08-16 11:16:06', '2022-08-16 11:16:06'),
-(5, 4, 4, 1, '2022-08-16 11:21:01', '2022-08-16 11:21:01'),
-(6, 7, 1, 1, '2022-08-17 05:44:26', '2022-08-17 05:44:26'),
-(7, 8, 1, 1, '2022-08-17 05:58:00', '2022-08-17 05:58:00');
 
 -- --------------------------------------------------------
 
@@ -171,13 +151,13 @@ INSERT INTO `categories` (`category_id`, `name`, `slug`, `is_active`, `deleted_a
 (1, 'Giyim', 'giyim', 1, NULL, NULL, NULL),
 (2, 'Teknoloji', 'teknoloji', 1, NULL, NULL, NULL),
 (3, 'Okul', 'okul', 1, NULL, NULL, NULL),
-(4, 'Aut esse reiciendis maxime.', 'aut-esse-reiciendis-maxime', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(5, 'Quos soluta perspiciatis ut.', 'quos-soluta-perspiciatis-ut', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(6, 'Dignissimos veritatis cupiditate enim.', 'dignissimos-veritatis-cupiditate-enim', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(7, 'Consectetur dolores velit voluptates vel necessitatibus.', 'consectetur-dolores-velit-voluptates-vel-necessitatibus', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(8, 'At voluptatem occaecati incidunt natus nemo.', 'at-voluptatem-occaecati-incidunt-natus-nemo', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(9, 'Repudiandae sunt.', 'repudiandae-sunt', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(10, 'Ex doloribus officiis rerum.', 'ex-doloribus-officiis-rerum', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27');
+(4, 'Rerum consequatur amet dolor rerum quia.', 'rerum-consequatur-amet-dolor-rerum-quia', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(5, 'Fugiat eos adipisci ut eos.', 'fugiat-eos-adipisci-ut-eos', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(6, 'Fugit quaerat quo.', 'fugit-quaerat-quo', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(7, 'Repudiandae impedit facilis.', 'repudiandae-impedit-facilis', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(8, 'Voluptatibus aspernatur illum earum.', 'voluptatibus-aspernatur-illum-earum', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(9, 'Qui iure ipsum accusamus laudantium enim ut.', 'qui-iure-ipsum-accusamus-laudantium-enim-ut', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(10, 'Ut natus ab cum placeat iste.', 'ut-natus-ab-cum-placeat-iste', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47');
 
 -- --------------------------------------------------------
 
@@ -314,10 +294,18 @@ CREATE TABLE `personal_access_tokens` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
   `abilities` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `expires_at` timestamp NULL DEFAULT NULL,
   `last_used_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Tablo döküm verisi `personal_access_tokens`
+--
+
+INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `name`, `token`, `abilities`, `expires_at`, `last_used_at`, `created_at`, `updated_at`) VALUES
+(1, 'App\\Models\\User', 1, 'ecommerce', 'c3ecd0e7f229751067593a428068a673a16785b56253ea565643182fb4592777', '[\"*\"]', NULL, NULL, '2022-08-24 10:03:45', '2022-08-24 10:03:45');
 
 -- --------------------------------------------------------
 
@@ -346,56 +334,56 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`products_id`, `category_id`, `name`, `price`, `old_price`, `lead`, `description`, `slug`, `is_active`, `deleted_at`, `created_at`, `updated_at`) VALUES
 (1, 1, 'bluz', 55.00, 62.00, 'sss lorem ipsum lorem ipsum ss', 'sss lorem ipsum lorem ipsum ss', 'giyim-bluz', 1, NULL, NULL, NULL),
-(2, 6, 'Itaque omnis.', 5.00, 672.00, 'Dolorem labore non maiores odit voluptatem excepturi earum. Animi repellat reprehenderit excepturi. Cupiditate voluptate aut et sunt et dignissimos tempora.', 'Exercitationem dolore repellat est sunt aut minus rerum quo. Nisi consequatur non odio dolore sint quam. Qui ex nesciunt qui sit.', 'itaque-omnis', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(3, 6, 'Quos quo.', 977.00, 890.00, 'Rem doloremque iste repellendus. Deserunt sint et voluptatem consequatur in officiis quaerat eum. Iure commodi in at aut. Quis ducimus aliquam ab et sed libero.', 'Quae dignissimos sit autem earum debitis. Et voluptas deleniti quia. Voluptas fugit corporis nemo consectetur.', 'quos-quo', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(4, 9, 'Iste consequatur.', 460.00, 586.00, 'Quo nam minima ex placeat. Corporis ratione eos excepturi magnam. Magni consequuntur fuga minima velit quos ipsam facere.', 'Fugiat quia culpa quo dolor consequatur delectus. Id labore ea nobis vel ullam. Sit dolorum non ipsam qui expedita in.', 'iste-consequatur', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(5, 4, 'Consequatur reiciendis.', 831.00, 90.00, 'Dolor iusto nostrum possimus quis assumenda numquam quos fugiat. Ab quam et animi quia deleniti quasi consectetur sequi. Voluptatum qui consequatur soluta.', 'Nisi suscipit id qui sapiente iusto placeat. Soluta occaecati molestiae soluta eaque pariatur eum voluptates rerum. Sint qui quod qui ipsum doloremque.', 'consequatur-reiciendis', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(6, 4, 'Quae culpa.', 142.00, 159.00, 'Blanditiis tempore quas dolore non. Voluptas eum quo neque a beatae nemo mollitia. Quia consequatur esse voluptatem cupiditate et laboriosam delectus. Sint et consequatur maiores ut officia neque at.', 'Voluptatem rerum excepturi id placeat non molestias. Mollitia enim in tempora voluptates inventore aut quasi consequuntur. Et adipisci velit quia aut beatae voluptates.', 'quae-culpa', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(7, 5, 'Autem iste.', 533.00, 815.00, 'Odit et aliquam commodi incidunt. Dolores officiis et quod sit possimus. Ipsum aut enim numquam omnis et dolor dolorem.', 'Temporibus voluptas totam alias cumque cum aliquid. Molestias quibusdam maiores eaque. Consequuntur numquam eaque maxime.', 'autem-iste', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(8, 3, 'Ut.', 841.00, 905.00, 'Repellat in eum ut dicta nihil. Cum sint voluptatum qui. Ratione et consequatur illo et saepe dolore inventore. Nisi deserunt ipsum consequuntur in voluptas placeat.', 'Iusto veniam quia vel iusto. Sint dignissimos quia id qui laudantium accusantium mollitia. Dolorum laborum quidem rerum vitae excepturi quisquam molestias.', 'ut', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(9, 10, 'Laudantium eum.', 617.00, 27.00, 'Quod est maxime voluptatem id adipisci provident aperiam. Accusantium aut nesciunt consectetur unde dolorem. Voluptate sequi et nulla laborum vel.', 'Ad doloribus repellat quos. Sed impedit alias accusantium blanditiis. Aperiam ut soluta quo facilis ipsum explicabo. Quia recusandae occaecati ut sit dolores dignissimos est ut.', 'laudantium-eum', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(10, 1, 'Qui voluptatem.', 612.00, 504.00, 'Vel suscipit perferendis sed sequi vel quas incidunt maiores. Illum ipsum quo veniam quia impedit. In fuga exercitationem excepturi. Aut atque eveniet ipsum ut.', 'Veniam neque quis culpa consequatur est ratione sapiente. Natus recusandae ex ut ut commodi asperiores exercitationem. Sunt quae similique et consequuntur ea non veritatis.', 'qui-voluptatem', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(11, 9, 'Ut accusamus.', 6.00, 329.00, 'Minima exercitationem saepe alias occaecati. Fugiat saepe et reiciendis saepe officiis id et. Deleniti dolorum quos laudantium magnam alias voluptatum error libero.', 'Laborum aliquid laborum est quas eum. Architecto nulla est et maiores sint quis a.', 'ut-accusamus', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(12, 8, 'Fugit.', 57.00, 159.00, 'Rerum qui commodi excepturi repellendus odit dolores. Et provident voluptate molestias consequatur sit qui. Qui similique quasi voluptas. Provident rerum alias tempore quibusdam rem quis.', 'Eos sed sed praesentium qui nobis. At nemo quod nemo ipsum eos unde. Incidunt officia eveniet id incidunt magnam veritatis qui qui.', 'fugit', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(13, 2, 'Deserunt accusantium.', 407.00, 363.00, 'Qui ut voluptatem quaerat aspernatur odio. Laborum at modi est odio asperiores ipsam illum. Est et enim aut ex voluptate minus sapiente.', 'Eius aut minus maiores. Dolore quo culpa non consequuntur cupiditate. Harum et ea magni culpa sapiente.', 'deserunt-accusantium', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(14, 10, 'Voluptatem quibusdam.', 999.00, 473.00, 'Ea sequi modi nulla et perferendis libero. Sequi deserunt eveniet ad magnam et molestiae dolorem. Culpa ut sint ea. Quo et eum molestiae magnam rerum tempora itaque voluptatem.', 'Est vel perspiciatis ut et. Omnis voluptas et sint velit dolorum molestiae quod. Ducimus exercitationem similique iure et. Magnam doloremque delectus asperiores necessitatibus quia accusamus tenetur.', 'voluptatem-quibusdam', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(15, 5, 'Quidem molestias.', 41.00, 899.00, 'Sed omnis et voluptas tenetur mollitia molestias ut fugit. Dolor reiciendis necessitatibus modi provident quidem voluptatem ut ullam. Libero omnis qui autem esse voluptatem molestias.', 'Nihil tempore aut animi odit blanditiis. Illo autem ipsa officiis voluptas officiis. Est illo qui ad quia nobis quia tempora sunt.', 'quidem-molestias', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(16, 2, 'Numquam sint.', 668.00, 327.00, 'Atque laudantium et consequatur sit quia. Necessitatibus officia alias molestiae adipisci beatae facilis dicta. Reiciendis atque ea omnis dolorum voluptas voluptatem rerum.', 'Autem omnis magni explicabo quibusdam deserunt sunt. Qui quae sint non odit animi ut atque. Maiores harum placeat adipisci aperiam sit. Magni fugit consectetur in omnis qui corrupti.', 'numquam-sint', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(17, 7, 'Excepturi.', 307.00, 457.00, 'Quis quae atque quis. Veritatis quo sequi quisquam cum occaecati est omnis ut. Rem dolorem rerum architecto possimus. Ipsam nemo assumenda perferendis deleniti molestiae qui.', 'Veniam quam quasi quibusdam rerum et. Impedit aliquid cumque ea et. Esse et voluptas consequatur porro atque ea. Sed magnam animi facilis nesciunt.', 'excepturi', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(18, 10, 'Id et.', 217.00, 938.00, 'Veniam iure qui libero itaque ratione sit. Aliquam error fuga consequatur incidunt illum ex. Natus sed voluptatum nisi placeat eum. A est debitis laborum numquam soluta.', 'Alias enim aut natus aut nam rerum nesciunt. Quas esse commodi quis. Dignissimos consequatur aliquid eius.', 'id-et', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(19, 10, 'Consequatur est.', 719.00, 445.00, 'Atque laboriosam aut laborum recusandae. Quia et deleniti sit ipsa aspernatur suscipit mollitia. Neque voluptatem quaerat aut nesciunt in atque quas.', 'Cum ut tempore eaque rerum odit consectetur qui. Quibusdam provident placeat unde non. Animi maxime deleniti consequatur provident. Quaerat delectus temporibus quis corporis.', 'consequatur-est', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(20, 3, 'Id.', 463.00, 941.00, 'Culpa ratione sunt facilis. Esse rerum molestias facere quia provident sequi et architecto. Sequi omnis quasi sint alias doloremque. Et esse nulla nihil laboriosam. Ipsa eum ratione sed culpa.', 'Dolore totam iste reiciendis optio qui. Voluptas minima eos non harum minima. Et eos sunt est incidunt eligendi non.', 'id', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(21, 9, 'Assumenda adipisci ex.', 672.00, 185.00, 'Tenetur saepe vitae eaque aut. Sit deleniti quisquam quaerat odit sed et facere. Qui molestiae inventore est. Et ipsa distinctio aut maxime dolor. Ullam et aut sint repudiandae.', 'Maiores maxime exercitationem sed id quidem velit. Eaque enim natus maxime. Non qui quibusdam est a. Qui ipsum delectus officiis dicta provident necessitatibus.', 'assumenda-adipisci-ex', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(22, 9, 'Accusantium asperiores maiores.', 522.00, 196.00, 'Et officiis qui similique maxime unde enim quia. Est qui iure eum aut fugit sapiente recusandae. Perspiciatis pariatur perspiciatis eos. Dolores quia quos sequi error voluptate.', 'Nulla dolorem sunt nemo nam in nisi. Quam qui et dolorem magnam explicabo animi enim et. Incidunt eligendi incidunt vel et aut aspernatur ratione facilis. Laboriosam pariatur odio adipisci officia.', 'accusantium-asperiores-maiores', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(23, 8, 'Saepe laudantium.', 170.00, 726.00, 'Sit id id nihil ut explicabo enim. Error laborum aperiam tempora. Doloribus soluta dolores iure natus a aspernatur. Quaerat et voluptate autem amet reprehenderit autem. Ex aut porro sequi adipisci.', 'Accusamus laboriosam corporis eaque qui alias et deleniti. Et officiis fuga amet id. Accusantium harum mollitia qui adipisci nobis adipisci. Alias quae impedit itaque quia omnis corrupti quo.', 'saepe-laudantium', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(24, 3, 'Rerum.', 386.00, 233.00, 'Adipisci hic ut amet earum iste. Tempore aut asperiores sequi unde et dicta. Reiciendis labore ut reprehenderit. Deserunt ullam et non et eum rerum aspernatur aliquid.', 'Pariatur similique occaecati quia possimus vel. Quidem distinctio aut praesentium modi repellat laborum. Aut sunt et nemo voluptatum et in voluptatem vitae.', 'rerum', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(25, 6, 'Libero dolor.', 216.00, 102.00, 'Autem doloremque eos et quo. Blanditiis inventore ducimus hic et odit maiores. Et veniam et reiciendis.', 'Officia eligendi omnis sapiente repudiandae officia. Aut quis minus labore praesentium soluta. Quia nemo sint error cumque dicta. Omnis rem et laboriosam quis.', 'libero-dolor', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(26, 3, 'Qui accusamus.', 470.00, 745.00, 'Enim nostrum laudantium voluptate voluptas. Sunt architecto voluptas aut aut dolorem. Exercitationem placeat sit voluptatem dicta pariatur necessitatibus molestias ut.', 'Nihil incidunt aliquid quam reiciendis voluptatem vero. Ut sunt qui sit aut.', 'qui-accusamus', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(27, 4, 'Reiciendis doloremque.', 10.00, 461.00, 'Libero sed atque id quae dolores vero. Et architecto officia non aut tempore amet. Similique molestiae nobis tenetur.', 'Expedita alias eos ducimus accusantium. Quia voluptates ab quas laboriosam vel fugit facere. Porro est fuga sunt sunt voluptatem dolores corrupti. Delectus libero quia quia sequi.', 'reiciendis-doloremque', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(28, 1, 'Beatae est.', 344.00, 370.00, 'Rerum dignissimos enim qui et est. Consequatur esse iure et eius totam omnis. Qui eum illo ea cum minima quam.', 'Aliquam optio dolores natus beatae sint similique. In sequi sed modi culpa. Aut repellendus officia cum quis officia sint. Amet eius iste ratione asperiores quia.', 'beatae-est', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(29, 1, 'Deleniti aut.', 214.00, 728.00, 'Praesentium necessitatibus cum expedita molestiae. Beatae qui voluptatem unde et voluptate consectetur. Quod eaque repellat voluptates sunt.', 'Cumque aspernatur doloribus molestiae voluptatum eum aut. Atque sapiente qui sed quas inventore corrupti beatae. Ab amet et est omnis.', 'deleniti-aut', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(30, 7, 'Qui ut consequatur.', 301.00, 877.00, 'Doloremque qui id cum blanditiis. Necessitatibus non et est qui. Hic soluta sed ullam nostrum est quia. Sit sint facilis dolor ut et quia. Unde aut numquam sunt odio alias ut.', 'Iusto ut harum enim facilis. Et odit praesentium ad tempora qui maiores. Qui quia repudiandae quaerat perferendis.', 'qui-ut-consequatur', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(31, 10, 'Sed qui.', 571.00, 957.00, 'Deserunt quia eum explicabo et adipisci eligendi voluptate. Debitis dolorem minima soluta quia nostrum. Consequuntur facilis molestiae et aut officiis iusto.', 'Et modi et iusto nihil aspernatur laboriosam. Eum voluptate pariatur in quo natus. Asperiores quo maxime quo omnis delectus libero.', 'sed-qui', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(32, 1, 'Voluptatum quas.', 884.00, 250.00, 'Unde et dignissimos nobis. Est consequatur sit dolorum molestiae voluptatem at. Rem modi assumenda quis maxime id. Impedit odit veritatis incidunt veritatis ullam quam sed.', 'Qui assumenda velit aliquam molestiae quibusdam. Est ut officia laudantium. Est quaerat autem voluptatem non animi ratione. Non similique fugit delectus aspernatur delectus.', 'voluptatum-quas', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(33, 6, 'Dolor officia.', 593.00, 351.00, 'Natus quod molestiae deserunt laborum dolores. Qui iure est qui quia id officiis maiores et. Ad repudiandae qui hic voluptatem.', 'Voluptatem earum ea atque non quo sunt alias. Quibusdam sequi nihil cum ut repudiandae. Accusamus recusandae velit quia eveniet quia.', 'dolor-officia', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(34, 9, 'Non quae.', 457.00, 203.00, 'Quae reiciendis aspernatur esse et consequuntur. Aut commodi et perspiciatis nihil nihil. Nostrum voluptates porro sed blanditiis quidem maiores. Beatae qui quia et. Ut et nam repellendus alias.', 'Itaque quis eum aut culpa. Officia dicta aut sit molestiae. Nobis et distinctio blanditiis et non perferendis delectus ut. Itaque et officia iure sunt.', 'non-quae', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(35, 1, 'Ex.', 126.00, 676.00, 'Velit sint totam qui ut esse qui non. Magni voluptas neque itaque consequuntur. Dicta aut ducimus tempore nam architecto nisi. Et aut aperiam distinctio blanditiis molestiae numquam.', 'Eveniet natus perspiciatis et incidunt excepturi. Porro non earum consequatur consectetur. Eum numquam reiciendis atque quia. Autem modi vel explicabo assumenda at fuga explicabo.', 'ex', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(36, 5, 'Et nobis alias.', 788.00, 668.00, 'Beatae hic fugiat nemo culpa. Id molestias et veritatis eius. Voluptas est nesciunt et. Veritatis similique tenetur omnis qui ipsa quo.', 'Nobis sunt totam eveniet est id officia. Maxime voluptatem voluptatem nihil. Dolore maiores voluptate veritatis ad est enim.', 'et-nobis-alias', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(37, 5, 'Numquam quia.', 890.00, 269.00, 'Explicabo est eos perspiciatis sint. Rerum rerum hic ipsum accusamus iusto aut fugit est. Id dicta et est sed recusandae voluptatibus.', 'Corrupti facilis occaecati eos debitis. Explicabo cumque adipisci itaque nobis voluptas repellat. Eum voluptatum eum sint non facilis similique. Cumque et vero eligendi modi iusto quod in in.', 'numquam-quia', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(38, 8, 'Eos eligendi.', 326.00, 714.00, 'Qui et temporibus commodi molestiae eaque libero omnis. Perferendis aliquid corporis exercitationem nobis ex. Sunt tenetur quia ut necessitatibus maxime dolorem.', 'Non ut voluptate qui repellendus laboriosam. Et aperiam incidunt assumenda vel. Et quod minima eos.', 'eos-eligendi', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(39, 3, 'Iste accusamus distinctio.', 143.00, 17.00, 'Nihil ipsa accusantium et repudiandae sit. Quam maxime ab quo iste eaque nemo voluptatem. Ut odio qui voluptates sapiente. Ut incidunt modi aut nam vitae quae aut.', 'Quasi nobis et qui nulla. Aut eius sit nemo doloribus tempora consequuntur dolores. Quisquam fugiat nostrum aut doloremque aut laborum. Suscipit doloremque autem reiciendis neque sed.', 'iste-accusamus-distinctio', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(40, 10, 'Sed.', 810.00, 585.00, 'Dolorem molestiae est molestias hic doloremque magni aliquam. Nihil omnis provident molestiae reiciendis assumenda inventore quo. Doloremque natus nisi nihil perspiciatis dolorem blanditiis.', 'Non ut earum delectus perferendis qui doloribus perferendis sequi. Ea nihil architecto ipsa. Ex quas eos minus.', 'sed', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(41, 3, 'Similique et saepe.', 379.00, 117.00, 'Debitis illo dolor sunt aut fugiat voluptates earum. Et expedita odit vero sint possimus est. Maiores voluptatem qui nostrum nihil libero omnis molestiae.', 'Quod magni qui et hic dolorem odit vitae occaecati. Ex voluptas reprehenderit tempora. Eius eos quo nihil occaecati temporibus. Facere quo minus eveniet dolorem exercitationem.', 'similique-et-saepe', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(42, 5, 'Eaque quae.', 606.00, 935.00, 'Ut maxime nostrum nisi nemo id laudantium. Est aut culpa ex quis commodi et. Qui vel consectetur in esse ipsum. Et optio non perferendis consectetur. Et reiciendis et est.', 'Nobis ducimus quam illum odio vero nesciunt. Ut asperiores sit est eos voluptas qui. Explicabo consequuntur error consectetur iste non omnis. Corporis est et aut cumque commodi suscipit magni ipsam.', 'eaque-quae', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(43, 1, 'Eum quam.', 900.00, 632.00, 'Soluta maiores consequatur occaecati est quaerat eum sit. Quidem beatae autem reprehenderit excepturi. Impedit mollitia omnis accusamus qui accusantium quia nisi.', 'Quia quia sunt non et tenetur nihil ipsam delectus. Veritatis minima sed magni et deserunt qui non natus. Minus ea et dolor repellat. Vero officia ullam tempore nobis.', 'eum-quam', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(44, 3, 'Nisi officiis et.', 251.00, 949.00, 'Et molestiae atque voluptatem qui quos harum. Nihil odit nisi hic molestias eum ipsa.', 'Placeat eum tempore eos. Quaerat expedita ipsam porro vero aspernatur.', 'nisi-officiis-et', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(45, 8, 'Suscipit modi repellendus.', 741.00, 850.00, 'Aspernatur laboriosam repellat quo aut sed optio veniam. Molestias itaque illum nemo qui consequatur ea. Esse enim ex blanditiis cupiditate. Consequatur facere id nobis cum quo.', 'Incidunt aut impedit ipsa enim. Dignissimos excepturi minus pariatur. Illum vero impedit quo inventore harum ea.', 'suscipit-modi-repellendus', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(46, 10, 'Iure omnis.', 535.00, 434.00, 'In quo amet aperiam quod. Consequatur qui voluptates et quis qui voluptatem voluptatem. Et eaque voluptatem minus provident.', 'Corrupti alias earum vel dolorem animi. A maxime ducimus cum qui magni labore. Ad at consequuntur architecto iste corrupti ullam a.', 'iure-omnis', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(47, 6, 'Harum minima magnam.', 186.00, 832.00, 'Qui cupiditate sequi dolor voluptatem. Harum ratione quasi nobis est numquam quia. Enim enim aliquam quo vitae.', 'Voluptas repellat dignissimos qui necessitatibus. Non qui eos a consequatur. Modi et voluptas voluptas vel error veritatis. Mollitia ex ab porro sint harum eos facilis dolores.', 'harum-minima-magnam', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(48, 4, 'Et recusandae.', 23.00, 952.00, 'Molestias pariatur sapiente ut sunt. Minus fuga illum aut itaque voluptatibus quis. Veniam maxime commodi sed ut perferendis eum.', 'Accusantium voluptas beatae sit autem tenetur. Quaerat recusandae alias neque fuga. Facere tempore sit mollitia voluptatem earum vel ea tempore. Quo consectetur facere quisquam vero dolor minus.', 'et-recusandae', 1, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(49, 10, 'Necessitatibus rerum.', 548.00, 737.00, 'Sit est soluta id voluptate et excepturi voluptas. Repellendus unde dolores debitis libero. Aut illum labore quis velit ullam minima aut. Et aperiam et et molestias dolores cupiditate voluptas.', 'Quia neque non voluptates non aut. Et est earum laboriosam. Nobis velit facilis sit aut.', 'necessitatibus-rerum', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(50, 8, 'Iure voluptas.', 333.00, 304.00, 'Est in et aspernatur reprehenderit non non. Blanditiis ipsum sit ad eos debitis dolorem voluptatem dolor. Omnis ducimus rerum mollitia ipsam. Dicta molestiae soluta iste illum sed.', 'Quia ad cumque vitae voluptates in deserunt. Aut aut dicta recusandae sunt tempore ut et. Deserunt quas omnis est aut ipsam id. Quia consectetur nesciunt animi porro. Totam unde voluptas et culpa.', 'iure-voluptas', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(51, 4, 'Est magnam.', 218.00, 970.00, 'Minima ut consequatur explicabo temporibus in. Et rem a fugiat quia harum impedit repellendus iste.', 'Est vitae amet eum. Quam earum ducimus et et praesentium eos. Sunt officia optio similique quos numquam non distinctio autem.', 'est-magnam', 0, NULL, '2022-08-01 10:53:27', '2022-08-01 10:53:27');
+(2, 2, 'Mollitia et.', 987.00, 476.00, 'Culpa atque laudantium consectetur ut quae amet provident numquam. Cupiditate sit porro repellendus eos labore nulla rem labore. Praesentium quas quisquam quasi molestiae officia corporis.', 'Quo consequatur sit pariatur facere porro. Ut ipsam fugit assumenda culpa qui a alias eos.', 'mollitia-et', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(3, 6, 'Minus quas.', 986.00, 36.00, 'Dolor occaecati dolorem rem laborum molestiae. Dolorem in voluptates qui tenetur eaque et. Beatae quo neque temporibus repudiandae alias.', 'Sequi ratione minus ut quisquam voluptate aut repellat. Ipsa sunt nulla non eum. Laborum nemo occaecati voluptatem quis.', 'minus-quas', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(4, 8, 'Modi voluptatem deleniti.', 798.00, 334.00, 'Autem veritatis similique est commodi. Ratione aut enim minima voluptatem iste omnis. Nesciunt laudantium ut perspiciatis quidem. Omnis est neque voluptas nobis iste fuga.', 'Consequuntur facere omnis aut dolores perspiciatis illo libero non. Nam nihil beatae ducimus sequi. Dolor quaerat voluptatum veniam exercitationem est.', 'modi-voluptatem-deleniti', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(5, 2, 'Consequuntur molestias.', 819.00, 757.00, 'Deserunt rerum et eveniet facere dolore ut. Nulla consequuntur pariatur dolorem reprehenderit tempora illum. Sapiente esse et consequatur saepe facilis ullam quia. Blanditiis vel iusto nobis aut ut.', 'Quia incidunt natus voluptas. In omnis molestiae quaerat ea odio. Porro sapiente repellendus nihil sint quae magni eos quis.', 'consequuntur-molestias', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(6, 6, 'Quaerat fuga.', 826.00, 297.00, 'Deserunt quas aspernatur quia eos nisi iusto. Soluta dignissimos ab et rerum omnis voluptates.', 'Sit dignissimos placeat fuga architecto voluptatem et quia. Qui eius debitis nihil ad alias porro numquam alias. Perferendis rerum natus et aut ipsum itaque minus laboriosam.', 'quaerat-fuga', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(7, 4, 'Enim qui.', 15.00, 862.00, 'Esse voluptatem sed voluptas eum. Aut blanditiis maiores quaerat velit ut aut. Harum eligendi labore magnam earum nihil excepturi sed.', 'Id ex in quas. Ullam ut veniam neque doloremque laboriosam. Velit sunt officia saepe dolorem voluptatibus enim. Et doloremque quis ducimus. Ab ea ipsa quibusdam est rerum.', 'enim-qui', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(8, 5, 'Vel.', 405.00, 704.00, 'Recusandae dolor vel facilis autem nemo corporis. Et rerum provident commodi blanditiis qui eius. Error sapiente dolorem laborum non. Expedita voluptatum enim facilis consequatur nobis est.', 'Quia minus aliquid totam et vitae dolorum quidem laborum. Minima magnam explicabo tenetur explicabo perferendis est dolore. Velit et sed ut perferendis rem officia sit explicabo.', 'vel', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(9, 2, 'Enim aliquid consequuntur.', 523.00, 999.00, 'Rem praesentium doloremque eos qui eos sunt. Repellat beatae voluptatem dolor pariatur quam eum libero. Sunt ut iusto quidem natus asperiores fugiat voluptas.', 'Nobis et ut quo nostrum sit aut officia asperiores. Nostrum molestias repudiandae voluptatem ut. At sapiente qui quibusdam at aut labore perspiciatis. Repudiandae quo est id hic.', 'enim-aliquid-consequuntur', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(10, 5, 'Nihil ut.', 224.00, 66.00, 'Beatae inventore ullam autem iste. Architecto voluptatibus doloribus repellendus illum nemo qui in. Et consequatur laborum omnis enim sapiente maiores quis.', 'Et sed voluptas est ut autem. Velit quaerat et natus vel quaerat vitae. Rerum sunt corrupti quis omnis possimus. Aperiam enim dolorum provident perspiciatis.', 'nihil-ut', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(11, 2, 'Est.', 169.00, 527.00, 'Totam totam qui accusantium dolores tenetur. Sit soluta debitis omnis eligendi suscipit quod. Vitae totam quaerat ratione non vero omnis dicta.', 'Sint nisi repellat assumenda in aliquid assumenda aut. Cum autem et assumenda et.', 'est', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(12, 6, 'Ut consequatur est.', 386.00, 948.00, 'Inventore iusto iure quo. Laudantium quae veritatis sed expedita.', 'Ut suscipit voluptas sit soluta ratione omnis voluptas animi. Iste omnis amet eos rerum corrupti. Veniam vitae et dolores laudantium ea quas quo. Eos beatae atque sint sit officia sed.', 'ut-consequatur-est', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(13, 7, 'Blanditiis est omnis.', 98.00, 50.00, 'Ut blanditiis veritatis aut quibusdam nemo sed. Iusto accusamus et voluptas voluptatum dolores exercitationem. Reprehenderit veritatis ratione suscipit rerum a sed impedit.', 'Fuga voluptatibus voluptates aut itaque ea molestiae. Fugit qui aut tempora dicta nihil explicabo omnis. Earum esse eos laboriosam expedita animi.', 'blanditiis-est-omnis', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(14, 7, 'Et et.', 775.00, 868.00, 'Deserunt tempora magni illo aut iste. Eos fugit tenetur quas nostrum unde et. Recusandae veniam non sapiente. Fugit enim quisquam officiis error sint.', 'Aliquam cumque illum voluptatum a repellat debitis illum. Minus blanditiis rerum ex. Repellat reiciendis sed aspernatur vero quibusdam quo.', 'et-et', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(15, 10, 'Explicabo officia.', 985.00, 621.00, 'Temporibus ipsum odio rerum quas. Asperiores vel tempora consequuntur sequi deleniti error cumque. Et reprehenderit laboriosam voluptatem excepturi.', 'Illum recusandae vero ab explicabo. Molestiae omnis alias expedita beatae recusandae cum. Sequi iusto eius adipisci voluptates quidem minima dolor. Et itaque aut distinctio natus.', 'explicabo-officia', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(16, 6, 'Tempora totam.', 800.00, 223.00, 'Occaecati excepturi et veniam molestias dolor quia. Est et soluta vel molestias error iusto ipsum sed. Fugit et aut autem ut enim tempore aut. Sed delectus soluta qui sit.', 'Et voluptatem minima sunt nihil. Nobis sunt omnis in. Expedita voluptatem fugiat ducimus ea ducimus officiis.', 'tempora-totam', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(17, 4, 'Nesciunt.', 823.00, 957.00, 'Quod cumque excepturi harum rerum commodi nesciunt vel. Sapiente magnam est fugit eos ab suscipit earum. Deleniti ut dicta id.', 'Quam distinctio et mollitia cumque commodi sed. Dolores temporibus cupiditate reiciendis totam. Rerum sed quia et eos. Corporis sed et dolorem.', 'nesciunt', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(18, 8, 'Similique dicta.', 173.00, 501.00, 'Velit voluptatem illo sed cum voluptatibus labore. Animi perspiciatis omnis nulla amet.', 'In vero rerum tempore. Ea quod eius aspernatur labore quo labore facilis iure. Dolores temporibus velit facere maiores inventore.', 'similique-dicta', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(19, 7, 'Enim ut.', 986.00, 194.00, 'Non possimus earum amet voluptate rem. Voluptatum natus aspernatur velit distinctio fugit autem nostrum. Ratione dicta vero dolorum eos quam.', 'In eligendi ea quasi. Natus qui quia et laborum consequuntur officiis. Vel dignissimos vero possimus aliquam. Velit harum sit voluptatem beatae fugiat ea ut.', 'enim-ut', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(20, 6, 'Autem sed.', 232.00, 93.00, 'Praesentium rem fugit recusandae illum ipsum aut rerum. A aut illo sequi animi rerum totam. Ipsum voluptatem provident laudantium ullam. Autem deleniti iure magnam repellendus.', 'Tempore modi a dignissimos repellendus facilis. Cupiditate iste omnis ea et dolorem. Voluptas id facere recusandae adipisci dolorum omnis dignissimos aspernatur. Non dolor et omnis cumque qui.', 'autem-sed', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(21, 3, 'Vel sed.', 414.00, 725.00, 'Non facilis aut ratione facere cupiditate velit. Aliquid eos necessitatibus vitae rerum. Sit nam dolorum consequatur excepturi dolorum. Sed dolor nihil sit fugit. Omnis laudantium autem ut.', 'Vel placeat fuga unde dolor expedita ad. Veritatis et dolorem aut. Explicabo omnis ut iusto quia voluptatibus id aut.', 'vel-sed', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(22, 5, 'Et sit doloribus.', 583.00, 759.00, 'Eveniet perferendis deserunt reiciendis nesciunt aut. Illum facilis totam ut et nihil non deserunt. Nemo perferendis porro autem accusamus nostrum ut.', 'Velit blanditiis qui fugiat molestias eos. Voluptatibus voluptatum esse voluptatibus ea. Reiciendis reiciendis vel omnis. Enim qui tempora est labore.', 'et-sit-doloribus', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(23, 1, 'Et sunt provident.', 866.00, 164.00, 'Quia nesciunt sed non tenetur commodi. Error doloribus ut quia aut asperiores. Labore itaque maiores non atque facere. Sed error facere fugiat quis ratione labore ducimus deleniti.', 'Dolor ad consequatur ut sunt aperiam fugiat doloremque. Iure illo in quia non. Nam architecto cumque aut.', 'et-sunt-provident', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(24, 1, 'Et et neque.', 490.00, 417.00, 'Aut deleniti officia nisi est itaque. Tempora similique at veritatis necessitatibus.', 'Nihil reiciendis quas ducimus. Necessitatibus iusto et nulla molestias quia est sit. Et quidem in est earum beatae praesentium dolor.', 'et-et-neque', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(25, 2, 'Non.', 400.00, 708.00, 'Et fuga dolore tempora ab qui in nemo. Sequi facere tempore mollitia saepe excepturi consectetur aliquam. Aliquid corrupti et quo dolorem amet qui quam ea.', 'Sit sed repellat atque harum est aliquid cupiditate. Ut qui est tenetur aut. Molestiae autem libero voluptas necessitatibus. Quibusdam hic et sed.', 'non', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(26, 2, 'Possimus pariatur.', 307.00, 725.00, 'Reprehenderit quis consequatur quis numquam magni est asperiores. Suscipit facilis pariatur pariatur.', 'Amet omnis itaque et laboriosam ducimus tenetur necessitatibus itaque. Expedita ex animi qui sed nobis voluptatibus.', 'possimus-pariatur', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(27, 7, 'Nihil.', 191.00, 394.00, 'Consequatur dignissimos dolorem ducimus aut quia. Sapiente dolor possimus fuga ad nisi voluptas. Optio ex omnis iure odit odit est. Ex itaque aliquid iste velit facilis doloremque quo.', 'Odit ut a ducimus quibusdam. Molestiae ex recusandae sint minus eligendi mollitia fugit necessitatibus. Pariatur est eveniet et.', 'nihil', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(28, 7, 'Sit enim.', 997.00, 756.00, 'Ex aut blanditiis fugit facilis aliquid ipsam rerum. Unde dolore qui dignissimos dolores eligendi dolorum. Voluptate ea sunt sit deleniti suscipit est illo.', 'Aspernatur consequatur illum perferendis saepe. Consequatur nostrum fuga soluta non est. Itaque cumque repellendus aut voluptatum aspernatur numquam. Est veniam facilis porro sed rerum.', 'sit-enim', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(29, 2, 'Qui saepe pariatur.', 620.00, 294.00, 'Mollitia est in natus et. Rem accusamus rerum est soluta. Sed hic dolores dicta. Enim dolores aut laborum quo corrupti.', 'Quisquam dolore qui voluptas odio dolorum. Assumenda aut dolorum repellat natus. Asperiores quis labore sint aperiam.', 'qui-saepe-pariatur', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(30, 8, 'Ducimus eum.', 176.00, 539.00, 'Ipsa sed adipisci nisi sit sint nihil cumque. Sit magnam eum rerum quo quia rerum repellat ratione. Quos omnis ut delectus quia laudantium repellendus est ducimus.', 'Et et quo asperiores atque maiores. Sit qui in totam culpa quasi impedit praesentium. Ut est minus et dolor. Aut odit nobis quo error necessitatibus.', 'ducimus-eum', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(31, 10, 'Ab sit magni.', 897.00, 270.00, 'Rerum et perspiciatis est laborum ipsam enim. Voluptates vitae et doloribus nobis quia animi quaerat et. Et quam quos perspiciatis temporibus. Sed facere cum enim et.', 'Aperiam culpa distinctio modi iure. Quaerat vitae assumenda minima similique doloremque. Vel et cumque nostrum et numquam qui neque.', 'ab-sit-magni', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(32, 5, 'Et voluptatibus.', 286.00, 576.00, 'Quaerat placeat sint eos sequi voluptate est aut. In omnis doloremque sint vitae officia magni nesciunt fugiat. Nostrum aut qui consequatur deleniti. Harum praesentium natus nobis molestias.', 'Labore recusandae minus laudantium at quas mollitia voluptates. Id quasi vitae occaecati sint et in. Dolores est cupiditate omnis id eius esse consequatur sed.', 'et-voluptatibus', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(33, 1, 'Vel voluptatum.', 174.00, 693.00, 'Voluptatibus quisquam quos sed deleniti. Voluptates autem quisquam temporibus illum consequatur. Voluptates est placeat sed ut ducimus.', 'Esse vitae magnam et nam ipsa. Reiciendis quia dolor deserunt soluta quo laudantium. Aut dolor tempore ut est. Nesciunt quos consectetur provident esse excepturi velit qui autem.', 'vel-voluptatum', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(34, 4, 'Provident.', 125.00, 374.00, 'Et sed in porro neque optio illo cupiditate consequatur. Dolores est aut laudantium laboriosam vero consequatur sit. Omnis et et eligendi rerum aut ullam. Aperiam voluptas nam et.', 'Animi eos accusantium similique repellendus accusantium et officia et. Nobis eligendi saepe voluptas nostrum ut. Voluptatibus error minima occaecati sint hic at.', 'provident', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(35, 5, 'Consequatur dolores.', 618.00, 649.00, 'Quia dolores placeat est vitae atque id ducimus dolor. Debitis dolor et quaerat quia vitae. Distinctio tenetur officiis nam tempora nihil et eos.', 'Iure non non reprehenderit quia rerum est deleniti. Nesciunt dignissimos et eos sint maxime. Assumenda ullam cum ratione expedita eaque tenetur. Porro assumenda et rerum quae aut.', 'consequatur-dolores', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(36, 8, 'Eos omnis.', 294.00, 888.00, 'Aut iusto eum culpa incidunt. Debitis natus in unde ea nemo neque eveniet quia. Porro molestiae praesentium facere et.', 'Eligendi et esse possimus necessitatibus delectus rerum. Saepe voluptas voluptatem dolore corporis et. Sapiente quia vel dolor aspernatur.', 'eos-omnis', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(37, 4, 'Omnis adipisci.', 183.00, 323.00, 'Iusto voluptatem quia accusamus voluptate. Consequuntur commodi enim possimus eligendi eaque et in. Quod saepe omnis ipsam doloribus. Porro repellat consequatur iusto similique ea et placeat.', 'Aspernatur repudiandae ut et quaerat voluptas est non nobis. Vel optio aliquam sint et autem.', 'omnis-adipisci', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(38, 7, 'Voluptatum aut.', 740.00, 161.00, 'Ipsa hic non dolore rerum doloribus. Voluptate assumenda accusantium quo cumque quo.', 'Dolore commodi adipisci facilis voluptatem ipsam. Illum similique aliquam ipsum non repudiandae sint.', 'voluptatum-aut', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(39, 4, 'Eos labore quisquam.', 542.00, 570.00, 'Autem quis quia sequi ut. Magnam est nemo in. Facilis aut vel molestias sunt quia omnis earum. Voluptas dolor asperiores minima nesciunt sed voluptas dolor.', 'Quasi eos sed minus consequatur. Atque ipsum sit magni a aut. Sed autem ut sapiente cupiditate hic voluptatum ut id. Ad deleniti voluptas harum.', 'eos-labore-quisquam', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(40, 2, 'Illum dolore delectus.', 799.00, 58.00, 'Est similique cumque assumenda nemo. Ut dolorem nihil fugiat. Amet voluptas quo nemo iure atque blanditiis non temporibus.', 'Qui repudiandae facilis voluptatibus quibusdam. Non incidunt numquam qui nisi. Consequuntur eaque aut ut laboriosam aliquid iure et.', 'illum-dolore-delectus', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(41, 9, 'Sed aut.', 802.00, 7.00, 'Sapiente nostrum velit et aut a. Exercitationem enim ea ducimus aut. Amet qui sit quo porro.', 'Provident aliquam quia quis laborum aut. Consequatur cum explicabo ea fuga aut aliquam debitis. Dicta dolores consectetur corrupti molestiae facere deleniti qui.', 'sed-aut', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(42, 7, 'Culpa aliquam voluptatum.', 551.00, 774.00, 'Quia cum impedit quis ducimus ut commodi. Tempora porro ducimus eveniet itaque autem ipsum culpa.', 'Voluptas cumque aut sed facilis. Vel optio eos sunt omnis optio earum. Et dolor et error odio.', 'culpa-aliquam-voluptatum', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(43, 9, 'Adipisci facilis.', 426.00, 344.00, 'Nam quisquam ut temporibus temporibus et voluptate. Quod at nam delectus necessitatibus et minima. Eligendi quo neque asperiores sit voluptatem.', 'Distinctio temporibus sapiente neque itaque cum eum et. Magnam iure reprehenderit dolores. Officia tenetur veniam et et error. Sed qui laboriosam omnis ipsum voluptatum ut officia inventore.', 'adipisci-facilis', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(44, 9, 'Non.', 624.00, 239.00, 'Quos quia rerum asperiores totam mollitia et. Soluta nemo voluptatem sapiente et. Alias quas unde sed qui perferendis sint aliquam est. Quisquam optio aspernatur eos sint dolorem quas.', 'Voluptatem quia atque quasi qui numquam porro et dolorem. Ut eum ab earum saepe. Ipsum iure est animi veritatis. Rerum quis reiciendis voluptatem quis deserunt.', 'non', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(45, 1, 'Placeat.', 182.00, 782.00, 'Minus enim nostrum dicta distinctio est porro ab. Nam non sint laboriosam et nostrum praesentium. Provident ratione sint mollitia praesentium. Excepturi nulla eius fugit dolores excepturi.', 'Quaerat assumenda tempore harum rerum totam omnis. Voluptatem laboriosam maiores explicabo et quos dignissimos. Sunt et corporis ea atque et itaque. A nostrum voluptatem est et.', 'placeat', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(46, 2, 'Fuga rerum.', 298.00, 477.00, 'Doloribus in perferendis commodi quam. At reprehenderit nulla nihil. Adipisci quo ut fugiat consequatur blanditiis id.', 'Unde qui ut corrupti qui. Molestias quas quas est qui. Voluptates iste at non velit asperiores repellat cumque. Aut eveniet nostrum doloribus eligendi ea voluptatem. Beatae est nulla doloribus.', 'fuga-rerum', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(47, 6, 'Sapiente aperiam fugit.', 995.00, 845.00, 'Odio ex et commodi inventore magni. Qui iste nihil laborum quas. Commodi neque quas nihil temporibus unde et. Enim illo excepturi voluptatum quia.', 'Inventore sit magni dolores sit similique. Voluptate blanditiis dicta cumque vel cum. Est sunt ut in minus consectetur.', 'sapiente-aperiam-fugit', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(48, 7, 'Voluptatibus molestias.', 643.00, 388.00, 'Ipsam dignissimos voluptas facere et debitis. Praesentium qui sint odio maxime saepe minima. Consequatur laboriosam libero aut iste odit asperiores suscipit.', 'Nulla magni qui porro nihil quia veniam tempore totam. Voluptatem est deserunt provident tempore. Alias pariatur qui pariatur quaerat.', 'voluptatibus-molestias', 0, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(49, 3, 'Ipsum amet eos.', 402.00, 209.00, 'Eaque ipsum earum dolor et rerum. Optio dolor aperiam dolorem pariatur eveniet commodi. Laudantium eos id perferendis. Pariatur eum recusandae molestiae. Amet quos libero et aut rerum qui itaque.', 'Molestiae eius porro itaque iusto deserunt possimus. Et non tempore voluptatibus repellat rerum adipisci aut. Similique quam et fugit quasi sunt. Commodi neque fuga qui quasi totam qui.', 'ipsum-amet-eos', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(50, 10, 'Repudiandae.', 529.00, 742.00, 'Porro praesentium sed explicabo vel. Minus molestias quaerat qui ea accusantium aperiam tempora. Ab dolorem exercitationem ad recusandae recusandae neque distinctio. Unde debitis rem molestiae.', 'Non occaecati eos rem harum consequatur et harum. Labore ut qui mollitia consectetur quisquam enim. Id quia aut voluptate aspernatur necessitatibus.', 'repudiandae', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(51, 3, 'Ad magnam.', 75.00, 359.00, 'Delectus autem at voluptate expedita possimus nisi veritatis adipisci. Maiores delectus aut impedit ut. Quo accusantium vel quia dolorum qui voluptas ea.', 'Molestias impedit qui voluptatem possimus. Officiis quis et consequuntur et molestiae. Eos et vel quisquam excepturi deserunt. Aspernatur labore at libero optio deserunt vitae.', 'ad-magnam', 1, NULL, '2022-08-24 10:02:47', '2022-08-24 10:02:47');
 
 -- --------------------------------------------------------
 
@@ -420,96 +408,96 @@ CREATE TABLE `product_images` (
 
 INSERT INTO `product_images` (`image_id`, `products_id`, `image_url`, `alt`, `seq`, `is_active`, `created_at`, `updated_at`) VALUES
 (1, 1, 'https://via.placeholder.com/800x600.png/0044ff?text=et', 'First foto for giyim', '1', 1, NULL, NULL),
-(2, 22, 'https://via.placeholder.com/800x600.png/0000ff?text=molestiae', 'Annamarie Hegmann', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(3, 45, 'https://via.placeholder.com/800x600.png/008866?text=impedit', 'Marion Nitzsche', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(4, 40, 'https://via.placeholder.com/800x600.png/00ff55?text=inventore', 'Ansley Herzog Sr.', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(5, 39, 'https://via.placeholder.com/800x600.png/006688?text=sunt', 'Dr. Clementine Barrows II', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(6, 12, 'https://via.placeholder.com/800x600.png/006644?text=cumque', 'Miss Dawn Balistreri', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(7, 40, 'https://via.placeholder.com/800x600.png/006699?text=atque', 'Sasha Rath', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(8, 16, 'https://via.placeholder.com/800x600.png/009900?text=sed', 'Simone Cummings', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(9, 21, 'https://via.placeholder.com/800x600.png/00bb44?text=tenetur', 'Mr. Kamron Gibson', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(10, 10, 'https://via.placeholder.com/800x600.png/0044dd?text=totam', 'Prof. Marquis Vandervort Jr.', '3', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(11, 26, 'https://via.placeholder.com/800x600.png/006666?text=qui', 'Ms. Loraine McCullough', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(12, 10, 'https://via.placeholder.com/800x600.png/006677?text=placeat', 'Bertrand Bahringer', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(13, 21, 'https://via.placeholder.com/800x600.png/00eeee?text=vel', 'Prof. Abagail Kshlerin', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(14, 35, 'https://via.placeholder.com/800x600.png/00ee22?text=dolores', 'Mikel VonRueden', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(15, 16, 'https://via.placeholder.com/800x600.png/009966?text=eos', 'Tina Monahan', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(16, 2, 'https://via.placeholder.com/800x600.png/00dd00?text=maxime', 'Mario Mann', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(17, 5, 'https://via.placeholder.com/800x600.png/0077dd?text=placeat', 'Ms. Janie Haag', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(18, 30, 'https://via.placeholder.com/800x600.png/005544?text=sed', 'Dr. Sierra Hahn IV', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(19, 31, 'https://via.placeholder.com/800x600.png/0022ee?text=voluptates', 'Elias Beer', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(20, 27, 'https://via.placeholder.com/800x600.png/0055ff?text=sint', 'Avery Torp', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(21, 19, 'https://via.placeholder.com/800x600.png/007733?text=velit', 'Prof. Lonny Rice MD', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(22, 20, 'https://via.placeholder.com/800x600.png/00aacc?text=sit', 'Prof. Jalon Powlowski III', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(23, 28, 'https://via.placeholder.com/800x600.png/00ff88?text=commodi', 'Kasey Legros', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(24, 17, 'https://via.placeholder.com/800x600.png/0077bb?text=recusandae', 'Candace Reilly', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(25, 14, 'https://via.placeholder.com/800x600.png/00ff99?text=officiis', 'Dr. Sherwood DuBuque', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(26, 44, 'https://via.placeholder.com/800x600.png/002222?text=nostrum', 'Miss Larissa Schimmel', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(27, 34, 'https://via.placeholder.com/800x600.png/0011ee?text=aut', 'Hortense Lynch', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(28, 10, 'https://via.placeholder.com/800x600.png/009922?text=officiis', 'Filomena Skiles', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(29, 7, 'https://via.placeholder.com/800x600.png/007733?text=repudiandae', 'Shawna O\'Connell I', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(30, 25, 'https://via.placeholder.com/800x600.png/00ff11?text=nobis', 'Cleveland Dooley Sr.', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(31, 41, 'https://via.placeholder.com/800x600.png/002255?text=iste', 'Uriah Ankunding Jr.', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(32, 23, 'https://via.placeholder.com/800x600.png/00ffaa?text=aliquid', 'Joey Jakubowski', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(33, 24, 'https://via.placeholder.com/800x600.png/005588?text=rem', 'Prof. Napoleon Jakubowski', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(34, 28, 'https://via.placeholder.com/800x600.png/00ffcc?text=eos', 'Tiara Doyle', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(35, 13, 'https://via.placeholder.com/800x600.png/005500?text=officia', 'Miss Alvena Ortiz DVM', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(36, 11, 'https://via.placeholder.com/800x600.png/0033aa?text=optio', 'Roel Kshlerin DDS', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(37, 39, 'https://via.placeholder.com/800x600.png/00dd66?text=consequatur', 'Carole O\'Connell', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(38, 17, 'https://via.placeholder.com/800x600.png/001100?text=autem', 'Dan Ruecker', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(39, 46, 'https://via.placeholder.com/800x600.png/00ffaa?text=non', 'Marlen Walsh DDS', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(40, 20, 'https://via.placeholder.com/800x600.png/00cc88?text=dicta', 'Prof. Lambert Goyette II', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(41, 11, 'https://via.placeholder.com/800x600.png/000000?text=rem', 'Howell Dickinson III', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(42, 39, 'https://via.placeholder.com/800x600.png/00ddaa?text=ea', 'Royce Rogahn', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(43, 13, 'https://via.placeholder.com/800x600.png/00ccee?text=reprehenderit', 'Theresa Tromp', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(44, 44, 'https://via.placeholder.com/800x600.png/005511?text=officiis', 'Henri Hauck', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(45, 18, 'https://via.placeholder.com/800x600.png/002244?text=sed', 'Lilly Zulauf', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(46, 36, 'https://via.placeholder.com/800x600.png/009977?text=dolorem', 'Blaise Batz Jr.', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(47, 1, 'https://via.placeholder.com/800x600.png/005544?text=iste', 'Vern Crona', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(48, 23, 'https://via.placeholder.com/800x600.png/00dd33?text=magni', 'Prof. Joey Marquardt II', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(49, 29, 'https://via.placeholder.com/800x600.png/007777?text=saepe', 'Miss Zita Crooks Jr.', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(50, 22, 'https://via.placeholder.com/800x600.png/0033ee?text=exercitationem', 'Ivah Fay', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(51, 25, 'https://via.placeholder.com/800x600.png/00cccc?text=incidunt', 'Ms. Evie Deckow III', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(52, 31, 'https://via.placeholder.com/800x600.png/007744?text=consequatur', 'Walton Carroll', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(53, 26, 'https://via.placeholder.com/800x600.png/008811?text=consequatur', 'Gail Veum I', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(54, 34, 'https://via.placeholder.com/800x600.png/006677?text=harum', 'Dr. Juwan Heaney', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(55, 6, 'https://via.placeholder.com/800x600.png/0066cc?text=dicta', 'Hilario Crooks', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(56, 15, 'https://via.placeholder.com/800x600.png/002211?text=possimus', 'Yadira Tromp', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(57, 46, 'https://via.placeholder.com/800x600.png/000033?text=ducimus', 'Evan Goodwin', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(58, 30, 'https://via.placeholder.com/800x600.png/0011dd?text=vel', 'Jedidiah Bosco III', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(59, 27, 'https://via.placeholder.com/800x600.png/00ee99?text=optio', 'Virgie Stracke', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(60, 38, 'https://via.placeholder.com/800x600.png/00cc99?text=quia', 'Maximus Hayes', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(61, 31, 'https://via.placeholder.com/800x600.png/0055aa?text=aut', 'Maryam Weber', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(62, 14, 'https://via.placeholder.com/800x600.png/00eebb?text=temporibus', 'Ora Brown V', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(63, 37, 'https://via.placeholder.com/800x600.png/005566?text=cumque', 'Dena Hammes', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(64, 14, 'https://via.placeholder.com/800x600.png/0022ee?text=et', 'Fannie Cruickshank V', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(65, 34, 'https://via.placeholder.com/800x600.png/0099bb?text=enim', 'Ronaldo Wunsch', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(66, 23, 'https://via.placeholder.com/800x600.png/00ddaa?text=iusto', 'Kara Heaney', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(67, 29, 'https://via.placeholder.com/800x600.png/0088ee?text=et', 'Sterling Rogahn', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(68, 13, 'https://via.placeholder.com/800x600.png/0044bb?text=non', 'Prof. Jeromy Koss', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(69, 40, 'https://via.placeholder.com/800x600.png/0044cc?text=rerum', 'Prof. Camryn Padberg DVM', '3', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(70, 4, 'https://via.placeholder.com/800x600.png/005566?text=laborum', 'Casey Fisher', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(71, 4, 'https://via.placeholder.com/800x600.png/006688?text=quidem', 'Otis Denesik', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(72, 2, 'https://via.placeholder.com/800x600.png/003300?text=adipisci', 'Rosie Reynolds', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(73, 26, 'https://via.placeholder.com/800x600.png/007711?text=id', 'Vada Smith', '2', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(74, 40, 'https://via.placeholder.com/800x600.png/008899?text=adipisci', 'Javonte O\'Keefe', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(75, 31, 'https://via.placeholder.com/800x600.png/00cccc?text=et', 'Amiya Fadel', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(76, 33, 'https://via.placeholder.com/800x600.png/0033cc?text=nam', 'Dayne Parker', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(77, 29, 'https://via.placeholder.com/800x600.png/0088bb?text=quia', 'Derrick Jones', '3', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(78, 10, 'https://via.placeholder.com/800x600.png/001199?text=eum', 'Merritt Schmidt', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(79, 10, 'https://via.placeholder.com/800x600.png/009999?text=veniam', 'Leatha Kunze I', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(80, 32, 'https://via.placeholder.com/800x600.png/00aadd?text=dolore', 'Prof. Major Feeney', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(81, 15, 'https://via.placeholder.com/800x600.png/005599?text=qui', 'Ms. Isobel Leffler', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(82, 16, 'https://via.placeholder.com/800x600.png/0099aa?text=et', 'Miss Brenda Bernier I', '4', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(83, 1, 'https://via.placeholder.com/800x600.png/0011dd?text=repellendus', 'Willy Zemlak', '3', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(84, 11, 'https://via.placeholder.com/800x600.png/005522?text=tenetur', 'Mr. Rick Ryan I', '3', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(85, 43, 'https://via.placeholder.com/800x600.png/009911?text=eaque', 'Myron Haley Sr.', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(86, 6, 'https://via.placeholder.com/800x600.png/00dd88?text=quia', 'Roscoe McGlynn', '1', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(87, 10, 'https://via.placeholder.com/800x600.png/0077dd?text=fuga', 'Kristy Pollich', '4', 0, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(88, 20, 'https://via.placeholder.com/800x600.png/005566?text=quis', 'Sierra Wyman', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(89, 42, 'https://via.placeholder.com/800x600.png/004444?text=quia', 'Dr. Una Hilpert', '1', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(90, 3, 'https://via.placeholder.com/800x600.png/005555?text=qui', 'Autumn Ortiz', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48'),
-(91, 37, 'https://via.placeholder.com/800x600.png/00ff11?text=ut', 'Leland Mayer', '2', 1, '2022-08-01 10:53:48', '2022-08-01 10:53:48');
+(2, 25, 'https://via.placeholder.com/800x600.png/0088dd?text=aut', 'Carlee Grady', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(3, 38, 'https://via.placeholder.com/800x600.png/0011bb?text=commodi', 'Emmanuelle Kuvalis', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(4, 11, 'https://via.placeholder.com/800x600.png/0099ee?text=enim', 'Natalie Heller', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(5, 37, 'https://via.placeholder.com/800x600.png/00ddee?text=molestiae', 'Miss Sophia Stokes', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(6, 19, 'https://via.placeholder.com/800x600.png/0022aa?text=consequatur', 'Mr. Jimmy McDermott', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(7, 22, 'https://via.placeholder.com/800x600.png/006644?text=eligendi', 'Dr. Arthur Miller', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(8, 3, 'https://via.placeholder.com/800x600.png/00dd44?text=voluptatem', 'Alexa Wiegand III', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(9, 8, 'https://via.placeholder.com/800x600.png/00eebb?text=architecto', 'Hailey O\'Conner', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(10, 20, 'https://via.placeholder.com/800x600.png/00ddbb?text=culpa', 'Luis Lindgren', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(11, 10, 'https://via.placeholder.com/800x600.png/007766?text=itaque', 'Sabrina Prohaska', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(12, 12, 'https://via.placeholder.com/800x600.png/004477?text=ullam', 'Prof. Dorcas Cole I', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(13, 33, 'https://via.placeholder.com/800x600.png/0033cc?text=natus', 'Dr. Grayce Aufderhar', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(14, 41, 'https://via.placeholder.com/800x600.png/008800?text=enim', 'Nick Bechtelar', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(15, 21, 'https://via.placeholder.com/800x600.png/0033dd?text=autem', 'Bridie Brakus', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(16, 17, 'https://via.placeholder.com/800x600.png/00ddaa?text=tempore', 'Domenica Emard', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(17, 6, 'https://via.placeholder.com/800x600.png/0044aa?text=quia', 'Prof. Isabelle Swaniawski DDS', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(18, 46, 'https://via.placeholder.com/800x600.png/0000ee?text=quod', 'Hudson Mueller', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(19, 8, 'https://via.placeholder.com/800x600.png/000011?text=aliquid', 'Antwan Barton', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(20, 9, 'https://via.placeholder.com/800x600.png/008888?text=alias', 'Kacey Homenick DDS', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(21, 39, 'https://via.placeholder.com/800x600.png/0033ee?text=amet', 'Mr. Thurman Dach II', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(22, 2, 'https://via.placeholder.com/800x600.png/005522?text=necessitatibus', 'Darby VonRueden', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(23, 47, 'https://via.placeholder.com/800x600.png/00aabb?text=voluptas', 'Emerald Waelchi', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(24, 19, 'https://via.placeholder.com/800x600.png/004499?text=delectus', 'Lilly Haley', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(25, 45, 'https://via.placeholder.com/800x600.png/001199?text=animi', 'Nelson Smith', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(26, 37, 'https://via.placeholder.com/800x600.png/0066cc?text=qui', 'Miss Velma Konopelski', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(27, 14, 'https://via.placeholder.com/800x600.png/00bbff?text=eos', 'Mac Cartwright', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(28, 13, 'https://via.placeholder.com/800x600.png/003344?text=voluptas', 'Julio Crooks Jr.', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(29, 3, 'https://via.placeholder.com/800x600.png/00dd55?text=eos', 'Liana Rutherford', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(30, 26, 'https://via.placeholder.com/800x600.png/0022cc?text=quisquam', 'Hilton Macejkovic', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(31, 7, 'https://via.placeholder.com/800x600.png/007722?text=nemo', 'Selena Wunsch', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(32, 34, 'https://via.placeholder.com/800x600.png/00cc99?text=delectus', 'Daron Medhurst', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(33, 44, 'https://via.placeholder.com/800x600.png/00aaee?text=perspiciatis', 'Mr. Martin Reichert', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(34, 47, 'https://via.placeholder.com/800x600.png/007777?text=ducimus', 'Rachelle Kozey', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(35, 45, 'https://via.placeholder.com/800x600.png/00ccff?text=fuga', 'Oren Crona', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(36, 30, 'https://via.placeholder.com/800x600.png/0066ff?text=qui', 'Stephania Dach', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(37, 38, 'https://via.placeholder.com/800x600.png/0044bb?text=repudiandae', 'Alaina Reichel PhD', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(38, 21, 'https://via.placeholder.com/800x600.png/002277?text=ut', 'Darby Mann', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(39, 41, 'https://via.placeholder.com/800x600.png/00aa55?text=libero', 'Prof. Ciara Franecki III', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(40, 20, 'https://via.placeholder.com/800x600.png/00bb88?text=incidunt', 'Dr. Marlon Parker III', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(41, 19, 'https://via.placeholder.com/800x600.png/002288?text=dolorem', 'Nicklaus Langosh', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(42, 14, 'https://via.placeholder.com/800x600.png/0000aa?text=est', 'Dakota Batz MD', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(43, 26, 'https://via.placeholder.com/800x600.png/00cc11?text=sed', 'Ms. Kamille Thompson Sr.', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(44, 15, 'https://via.placeholder.com/800x600.png/00ee33?text=delectus', 'Pablo Stroman', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(45, 6, 'https://via.placeholder.com/800x600.png/00cc66?text=voluptatem', 'Dana Hintz', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(46, 11, 'https://via.placeholder.com/800x600.png/004444?text=qui', 'Alysa Keebler I', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(47, 21, 'https://via.placeholder.com/800x600.png/00dddd?text=nemo', 'Mable Wuckert MD', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(48, 14, 'https://via.placeholder.com/800x600.png/00ccff?text=perferendis', 'Annabel Marks', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(49, 13, 'https://via.placeholder.com/800x600.png/00eeee?text=est', 'Kolby Bergnaum', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(50, 2, 'https://via.placeholder.com/800x600.png/009911?text=nobis', 'Mr. Lyric Windler', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(51, 47, 'https://via.placeholder.com/800x600.png/003344?text=quis', 'Neva VonRueden', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(52, 7, 'https://via.placeholder.com/800x600.png/00ddff?text=et', 'Raymond Ankunding', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(53, 34, 'https://via.placeholder.com/800x600.png/00aa77?text=iusto', 'Myra Maggio', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(54, 36, 'https://via.placeholder.com/800x600.png/00ccbb?text=blanditiis', 'Ms. Nya Hermiston', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(55, 6, 'https://via.placeholder.com/800x600.png/008833?text=ut', 'Dortha Effertz', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(56, 28, 'https://via.placeholder.com/800x600.png/0088cc?text=hic', 'Meaghan Kunde', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(57, 10, 'https://via.placeholder.com/800x600.png/00bb88?text=voluptatem', 'Rowland Klein', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(58, 28, 'https://via.placeholder.com/800x600.png/001144?text=sint', 'Jennie Beatty', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(59, 28, 'https://via.placeholder.com/800x600.png/000033?text=incidunt', 'Mr. Nico Hermann II', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(60, 44, 'https://via.placeholder.com/800x600.png/00cc99?text=et', 'Prof. Bernadette Kihn Sr.', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(61, 11, 'https://via.placeholder.com/800x600.png/0000ee?text=perferendis', 'Amalia Miller Sr.', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(62, 24, 'https://via.placeholder.com/800x600.png/00cc33?text=enim', 'Mariela Ziemann', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(63, 34, 'https://via.placeholder.com/800x600.png/009977?text=et', 'Manuel Muller', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(64, 10, 'https://via.placeholder.com/800x600.png/0077bb?text=nostrum', 'Quinn Kshlerin', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(65, 31, 'https://via.placeholder.com/800x600.png/000055?text=cumque', 'Myra Larkin', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(66, 26, 'https://via.placeholder.com/800x600.png/006611?text=eos', 'Toy Kub III', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(67, 1, 'https://via.placeholder.com/800x600.png/00cc88?text=est', 'Mr. Sammie Keeling', '3', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(68, 23, 'https://via.placeholder.com/800x600.png/0000ff?text=repudiandae', 'Laurie Abernathy', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(69, 21, 'https://via.placeholder.com/800x600.png/00ee77?text=voluptatem', 'Prof. Reuben Stark', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(70, 34, 'https://via.placeholder.com/800x600.png/009933?text=quisquam', 'Jaydon Grant', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(71, 6, 'https://via.placeholder.com/800x600.png/003355?text=voluptate', 'Laverna Donnelly I', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(72, 32, 'https://via.placeholder.com/800x600.png/007744?text=hic', 'Nathanial Kutch MD', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(73, 7, 'https://via.placeholder.com/800x600.png/00bbdd?text=suscipit', 'Dr. Moses Lesch Jr.', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(74, 30, 'https://via.placeholder.com/800x600.png/0066dd?text=accusamus', 'Prof. Magdalena Dibbert', '1', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(75, 2, 'https://via.placeholder.com/800x600.png/001144?text=a', 'Blanche Torphy', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(76, 38, 'https://via.placeholder.com/800x600.png/0022aa?text=eos', 'Sandra Gusikowski PhD', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(77, 47, 'https://via.placeholder.com/800x600.png/0044dd?text=voluptatem', 'Rubie Morissette V', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(78, 11, 'https://via.placeholder.com/800x600.png/0055bb?text=fugit', 'Dr. Wilford Casper', '2', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(79, 47, 'https://via.placeholder.com/800x600.png/001166?text=quidem', 'Rocky Beatty Sr.', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(80, 40, 'https://via.placeholder.com/800x600.png/001166?text=quae', 'Mozell Bashirian', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(81, 31, 'https://via.placeholder.com/800x600.png/0011aa?text=blanditiis', 'Dylan Jaskolski', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(82, 19, 'https://via.placeholder.com/800x600.png/006699?text=nobis', 'Brown Cummings', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(83, 11, 'https://via.placeholder.com/800x600.png/0033ee?text=quia', 'Daron Boehm', '3', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(84, 30, 'https://via.placeholder.com/800x600.png/0066bb?text=voluptas', 'Lillian Gaylord', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(85, 6, 'https://via.placeholder.com/800x600.png/00bbff?text=inventore', 'Ken Schowalter DVM', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(86, 33, 'https://via.placeholder.com/800x600.png/001122?text=autem', 'Luisa Jerde MD', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(87, 42, 'https://via.placeholder.com/800x600.png/00eecc?text=est', 'Marcos Romaguera', '4', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(88, 35, 'https://via.placeholder.com/800x600.png/00ee99?text=dolorem', 'Mr. Brando Rosenbaum', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(89, 15, 'https://via.placeholder.com/800x600.png/00ee00?text=in', 'Tommie Carter', '4', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(90, 25, 'https://via.placeholder.com/800x600.png/00ccbb?text=animi', 'Cade Kuvalis', '2', 0, '2022-08-24 10:03:07', '2022-08-24 10:03:07'),
+(91, 35, 'https://via.placeholder.com/800x600.png/0044bb?text=itaque', 'Audra Huels MD', '1', 1, '2022-08-24 10:03:07', '2022-08-24 10:03:07');
 
 -- --------------------------------------------------------
 
@@ -535,18 +523,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `email`, `email_verified_at`, `password`, `is_admin`, `is_active`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Muhammet ali Kayacan', 'muhammetluna@gmail.com', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'Q9xjiT1Xarz7hl9Cskq0HX2d9NZiSP9SrunaNlTbm5l0QfZ4niz8oLuGCGYG', NULL, NULL),
-(2, 'Mortimer Veum', 'johnson.ebony@example.net', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'c5gM6p1IyJlbpAmk7M69bAlUaZFwMlEq9HJhbARlqPlvEHiurEQad9BvuzXm', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(3, 'Kory White', 'aoreilly@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, '2KoK4QxMYU', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(4, 'Cesar Gutkowski', 'mohr.katrine@example.org', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'Kctl9mthc8', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(5, 'Mr. Rollin Reilly DDS', 'nelda57@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'jibCLRqkvE', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(6, 'Prof. Lesly Rippin I', 'wyman.vandervort@example.net', '2022-08-01 10:53:27', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 0, 1, '8CzVxZD3OV', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(7, 'Mrs. Magnolia Kohler', 'ivah.thompson@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'f0cHtk4sn3', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(8, 'Stephan Reynolds', 'gwendolyn71@example.net', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, '28NwrECrxs', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(9, 'Alverta Goodwin IV', 'kreinger@example.org', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, '0zstqeRvxJ', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(10, 'Dr. Ricky Dicki V', 'rafael37@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, '2J31KcSgfe', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(11, 'Shyanne Schoen MD', 'jairo09@example.com', '2022-08-01 10:53:27', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 0, 'FSDDy5whcW', '2022-08-01 10:53:27', '2022-08-01 10:53:27'),
-(13, 'sd', 'muhammetluna44@gmail.com44', NULL, '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'xHODDgsZqLDOOgWYnWLJaNVHclNIjTbfh5MEKxFuJnurRM05geoeoneB7yCR', '2022-08-16 05:40:19', '2022-08-16 05:47:01');
+(1, 'Muhammet ali Kayacan', 'muhammetluna@gmail.com', '2022-08-24 10:02:47', '$2y$10$S3o7zTr08g5sL1UgetEmmurWQmzCH8tG/qPllLigsR35I4Hv3Jmlq', 1, 1, 'LaP4nsZQTt', NULL, NULL),
+(2, 'Prof. Ozella Robel', 'zpollich@example.net', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'FlFJOeCJKV', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(3, 'Augustine Stoltenberg', 'anya79@example.com', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, 'fe8XlynZx9', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(4, 'Flo Mills', 'miller.coleman@example.net', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'VXHYePJamT', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(5, 'Eleonore Littel', 'mireille.williamson@example.org', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'hKtfFKhKBa', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(6, 'Macey Denesik', 'pemard@example.org', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, 'iHkUhEsL6N', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(7, 'Virgil Schaden', 'xolson@example.net', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'hXyRNISPnT', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(8, 'Nyasia Heaney', 'slakin@example.net', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 1, 'VNDZ7nZ9aG', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(9, 'Thalia Blanda', 'lorine.schulist@example.net', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'PHAYw2GfVG', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(10, 'Prof. Celestine Gerhold', 'alanna72@example.org', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0, 'tpt4O3Ezf7', '2022-08-24 10:02:47', '2022-08-24 10:02:47'),
+(11, 'Mr. Monty Rowe', 'goldner.verla@example.org', '2022-08-24 10:02:47', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 1, 'GPETudYIw0', '2022-08-24 10:02:47', '2022-08-24 10:02:47');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -673,13 +660,13 @@ ALTER TABLE `addresses`
 -- Tablo için AUTO_INCREMENT değeri `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `cart_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cart_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `cart_details`
 --
 ALTER TABLE `cart_details`
-  MODIFY `cart_detail_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `cart_detail_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `categories`
@@ -727,7 +714,7 @@ ALTER TABLE `order_details`
 -- Tablo için AUTO_INCREMENT değeri `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `products`
@@ -745,7 +732,7 @@ ALTER TABLE `product_images`
 -- Tablo için AUTO_INCREMENT değeri `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Dökümü yapılmış tablolar için kısıtlamalar
