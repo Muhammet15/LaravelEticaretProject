@@ -9,8 +9,9 @@ use App\Models\Category;
 class CategoryController extends Controller
 {
     public function index(Category $category){
+        return $category;
         $categories = Category::all()->where("is_active",true);
-        $products =  $category->category;
+        return $products =  $category->category;
         return view('frontend.home.index',compact("categories","products"));
     }
 }
