@@ -44,11 +44,20 @@
               @foreach($carts as $detail)
               {{-- {{$detail}}    --}}
                   <tr>
-                  <td style="height: 250px; width:500px">
-                    <img src="{{$detail->product->image->image_url}}" class="card-img-top" alt="{{$detail->product->image->alt}}"> 
-                  </td>
+                  
+                 <td style="height: 250px; width:500px"> <?php try{ ?> 
+                   <h1 visibility: hidden> {{$detail->product->image->image_url}} </h1>
+                    
+                    <img src="{{$detail->product->image->image_url}}" class="card-img-top" alt="{{$detail->product->image->alt}}"/>    
+                         <?php } 
+                              catch(\Exception $e){ ?>
+                              
+                              </h1> <img src="{{URL('upload/images.jpg')}}" class="card-img-top" alt="Resim yok"></td> 
+                              <?php } ?> 
+                  
+                 
                   <td>{{$detail->product->name}}</td>
-                  <td>{{$detail->product->quantity}}</td> 
+                  <td>({{$detail->quantity}})</td> 
                   <td>{{$detail->product->price}}</td> 
                   <td><a href="{{route('remove',$detail->cart_detail_id)}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a></td>
                   </tr>
