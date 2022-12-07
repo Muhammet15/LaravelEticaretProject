@@ -28,13 +28,17 @@
         </nav>
     <div class="container" style="margin-top: 50px" >
       <table class="table table-bordered table-sm">
-        <h5 class="float-end"><a href="{{url('/')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön</a></h5>
+        <h5 class="float-end"><a href="{{url('/')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Geri Dön </a></h5>
+        <h5 class="float-end"><a href="{{route('tumsatinal')}}" class="btn btn-sm btn-dark text-white"> <i style="color:white" class="fa fa-plus"></i> Tümünü Satın Al </a></h5>
         <tr>
                 <th>Fotoğraf</th>
                 <th>Product Name</th>
                 <th>Adet</th>
                 <th>Price</th>
+                <th>Adet * Fiyat</th>
                 <th>İşlemler</th>
+                <th>Satın Al</th>
+               
         </tr>
           {{-- @foreach($detail->proimage->take(1) as $proimag)<!--array ilk olanı take ile aldık-->
                 <img src="{{$proimag->image_url}}" class="card-img-top" alt="..."> 
@@ -58,8 +62,10 @@
                  
                   <td>{{$detail->product->name}}</td>
                   <td>({{$detail->quantity}})</td> 
-                  <td>{{$detail->product->price}}</td> 
+                  <td>{{$detail->product->price }}</td> 
+                  <td><?php  print $detail->quantity * $detail->product->price ; ?> </td> 
                   <td><a href="{{route('remove',$detail->cart_detail_id)}}" class="btn btn-sm btn-danger"><i class=" fa fa-times"></i></a></td>
+                  <td><a href="{{route('satinal',$detail->cart_detail_id)}}" class="btn btn-sm btn-info"><i class="fa fa-credit-card" aria-hidden="true"></i></i></a></td>
                   </tr>
              @endforeach
       </tbody>

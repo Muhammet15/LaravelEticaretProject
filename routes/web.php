@@ -37,9 +37,12 @@ Route::get('/cikis',[AuthController::class,'logout']);
 
 Route::group(["middleware"=>"auth"],function()
 {
+
     Route::get('/sepetim',[CartController::class,'index']); 
     Route::get('/sepete-ekle/{product}',[CartController::class,'add']);
     Route::get('/sepete-sil/{cartDetails}',[CartController::class,'remove'])->name('remove');
+    Route::get('/sepetim/{cartDetails}/satinal',[CartController::class,'satinal'])->name('satinal'); 
+    Route::get('/sepetim/tumsatinal',[CartController::class,'tumsatinal'])->name('tumsatinal'); 
 
 });
 Route::group(["middleware"=>"auth"],function()
